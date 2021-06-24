@@ -52,16 +52,66 @@
 //   }
 // }
 
-class Sample3
+// class Sample3
+// {
+//   public static void main(String[] args)
+//   {
+//     System.out.println(10);
+//     System.out.println(010);
+//     System.out.println(0x10);
+//     System.out.println(0xF);
+//   }
+// }
+
+// class Sample3
+// {
+//   public static void main(String[] args)
+//   {
+//     System.out.println(06);
+//     System.out.println(0x6);
+//     System.out.println(024);
+//     System.out.println(0x14);
+//     System.out.println(015);
+//     System.out.println(0xd);
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int num1, num2;
+    
+//     num1 = 3;
+
+//     System.out.println("変数の値は" + num1 + "です。");
+
+//     num2 = num1;
+
+//     System.out.println("変数numの値を変更しました");
+//     System.out.println("変数numの新しい値は" + num2 + "です。");
+//   }
+// }
+
+import java.io.*;
+
+class Sample1
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws IOException
   {
-    System.out.println(10);
-    System.out.println(010);
-    System.out.println(0x10);
-    System.out.println(0xF);
+    System.out.println("文字列を入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+
+    String str = br.readLine();
+    //入力された文字列を表すstrを利用する
+
+    System.out.println(str + "が入力されました。");
   }
 }
+
+
 
 
 
