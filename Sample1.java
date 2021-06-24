@@ -93,27 +93,86 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class Sample1
-{
-  public static void main(String[] args) throws IOException
-  {
-    System.out.println("文字列を入力してください。");
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("文字列を入力してください。");
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
 
-    String str = br.readLine();
-    //入力された文字列を表すstrを利用する
+//     String str = br.readLine();
+//     //入力された文字列を表すstrを利用する
 
-    System.out.println(str + "が入力されました。");
-  }
-}
+//     System.out.println(str + "が入力されました。");
+//   }
+// }
 
+// import java.io.*;
 
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を入力してください");
 
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
 
+//     String str = br.readLine();
+
+//     int num = Integer.parseInt(str);
+
+//     System.out.println(num + "が入力されました。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を2つ入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     int num1 = Integer.parseInt(str1);
+//     int num2 = Integer.parseInt(str2);
+
+//     System.out.println("最初に" + num1 + "が入力されました。");
+//     System.out.println("次に" + num2 + "が入力されました。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     System.out.println("身長と体重を入力してください。");
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     Double num1 = Double.parseDouble(str1);
+//     Double num2 = Double.parseDouble(str2);
+
+//     System.out.println("身長は" + num1 + "センチです。");
+//     System.out.println("体重は" + num2 + "キロです。");
+//   }
+// }
 
 
 
