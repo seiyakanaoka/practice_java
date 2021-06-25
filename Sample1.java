@@ -222,8 +222,74 @@
 //   }
 // }
 
+// 四則演算---------------------------------------->>>>
 
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int num1 = 10;
+//     int num2 = 5;
 
+//     System.out.println("num1とnum2にいろいろな演算を行います。");
+
+//     System.out.println("num1+num2は" + (num1+num2) + "です。");
+//     System.out.println("num1-num2は" + (num1-num2) + "です。");
+//     System.out.println("num1*num2は" + (num1*num2) + "です。");
+//     System.out.println("num1/num2は" + (num1/num2) + "です。");
+//     System.out.println("num1%num2は" + (num1%num2) + "です。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int a = 0;
+//     int b = 0;
+
+//     b = a++;
+
+//     System.out.println("代入後にインクリメントしたのでbの値は" + b + "です。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int a = 0;
+//     int b = 0;
+
+//     b = ++a;
+
+//     System.out.println("代入前にインクリメントしたのでbの値は" + b + "です。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を3つ入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+//     String str3 = br.readLine();
+
+//     int sum = 0;
+//     sum += Integer.parseInt(str1);
+//     sum += Integer.parseInt(str2);
+//     sum += Integer.parseInt(str3);
+
+//     System.out.println("3つの数の合計は" + sum + "です。");
+//   }
+// }
 
 
 
