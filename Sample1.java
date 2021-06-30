@@ -291,6 +291,184 @@
 //   }
 // }
 
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     System.out.println("1+2は" + 1 + 2 + "です。");
+//     System.out.println("3*4は" + 3 * 4 + "です。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int inum = 160;
+//     System.out.println("身長は" + inum + "センチです。");
+
+//     System.out.println("double型も変数に代入します。");
+//     double dnum = inum;
+
+//     System.out.println("身長は" + dnum + "センチです。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     double dnum = 160.5;
+//     System.out.println("身長は" + dnum + "センチです。");
+
+//     System.out.println("int型の変数に代入します。");
+//     int inum = (int)dnum;
+
+//     System.out.println("身長は" + inum + "センチです。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int d = 2;
+//     double pi = 3.14;
+
+//     System.out.println("直径が" + d + "センチの円の");
+//     System.out.println("円周は" + (d * pi) + "センチです。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int num1 = 5;
+//     int num2 = 4;
+
+//     double div = num1 / (double)num2;
+
+//     System.out.println("5/4は" + div + "です。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     System.out.println(0-4);
+//     System.out.println(3.14*2);
+//     System.out.println(5/3);
+//     System.out.println(30%7);
+//     System.out.println((7+32)/5);
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を3つ入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+//     String str3 = br.readLine();
+
+//     int sum = 0;
+//     sum += Integer.parseInt(str1);
+//     sum += Integer.parseInt(str2);
+//     sum += Integer.parseInt(str3);
+
+//     System.out.println("3つの数の合計は" + sum + "です。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("正方形の辺の長さを入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+
+//     int num = 0;
+
+//     num = Integer.parseInt(str);
+
+//     System.out.println("正方形の面積は" + (num ** 2) + "です。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("正三角形の高さと底辺を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     double num1 = 0;
+//     double num2 = 0;
+//     int num3 = 2;
+
+//     num1 = Integer.parseInt(str1);
+//     num2 = Integer.parseInt(str2);
+
+//     System.out.println("正方形の面積は" + ((num1 * num2) / num3) + "です。");
+//   }
+// }
+
+import java.io.*;
+
+class Sample1
+{
+  public static void main(String[] args) throws IOException
+  {
+    System.out.println("科目1〜5の点数を入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+
+    String str1 = br.readLine();
+    String str2 = br.readLine();
+    String str3 = br.readLine();
+    String str4 = br.readLine();
+    String str5 = br.readLine();
+
+    int num1 = 0;
+    int num2 = 0;
+    int num3 = 0;
+    int num4 = 0;
+    int num5 = 0;
+    int num6 = 5;
+
+    num1 = Integer.parseInt(str1);
+    num2 = Integer.parseInt(str2);
+    num3 = Integer.parseInt(str3);
+    num4 = Integer.parseInt(str4);
+    num5 = Integer.parseInt(str5);
+
+    System.out.println("5科目の合計点は" + (num1 + num2 + num3 + num4 + num5) + "です。");
+    System.out.println("5科目の平均点は" + (((double)num1 + num2 + num3 + num4 + num5) / num6) + "です。");
+  }
+}
 
 
 
