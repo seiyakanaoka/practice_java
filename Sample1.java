@@ -798,30 +798,43 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("いくつまでの合計を求めますか？");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int num = Integer.parseInt(str);
+
+//     int sum = 0;
+//     for(int i = 1; i <= num; i++) {
+//       sum += i;
+//     }
+
+//     System.out.println("1から" + num + "までの合計は" + sum + "です。");
+//   }
+// }
 
 class Sample1
 {
-  public static void main(String[] args) throws IOException
+  public static void main(String[] args)
   {
-    System.out.println("いくつまでの合計を求めますか？");
+    int i = 1;
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
-
-    String str = br.readLine();
-    int num = Integer.parseInt(str);
-
-    int sum = 0;
-    for(int i = 1; i <= num; i++) {
-      sum += i;
+    while(i <= 5) {
+      System.out.println(i + "番目の繰り返しです。");
+      i++;
     }
 
-    System.out.println("1から" + num + "までの合計は" + sum + "です。");
+    System.out.println("繰り返しが終わりました。");
   }
 }
-
-
 
 
 
