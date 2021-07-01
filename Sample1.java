@@ -654,6 +654,119 @@
 //   }
 // }
 
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+
+//     int num = Integer.parseInt(str);
+
+//     if(num % 2 == 0) {
+//       System.out.println(num + "は偶数です。");
+//     }
+//     else {
+//       System.out.println(num + "は奇数です。");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("2つの整数を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     int num1 = Integer.parseInt(str1);
+//     int num2 = Integer.parseInt(str2);
+
+//     if(num1 == num2) {
+//       System.out.println("2つの値は同じ数です。");
+//     }
+//     else if(num1 > num2) {
+//       System.out.println(num2 + "より" + num1 + "の方が大きいです。");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("0~10までの整数を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+
+//     int num = Integer.parseInt(str);
+
+//     int sum = 10;
+
+//     if(num >= 0 && num <= sum) {
+//       System.out.println("正解です。");
+//     }
+//     else {
+//       System.out.println("まちがいです。");
+//     }
+//   }
+// }
+
+import java.io.*;
+
+class Sample1
+{
+  public static void main(String[] args) throws IOException
+  {
+    System.out.println("あなたの成績を1〜５の段階で1つ入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+
+    String str = br.readLine();
+
+    int num = Integer.parseInt(str);
+
+    switch(num) {
+      case 1:
+        System.out.println("もっと頑張りましょう。");
+        break;
+      case 2:
+        System.out.println("もう少し頑張りましょう。");
+        break;
+      case 3:
+        System.out.println("さらに上を目指しましょう。");
+        break;
+      case 4:
+        System.out.println("たいへんよくできました。");
+        break;
+      case 5:
+        System.out.println("たいへん優秀です。");
+        break;
+    }
+  }
+}
+
+
+
 
 
 
