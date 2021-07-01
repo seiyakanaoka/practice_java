@@ -730,40 +730,145 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("あなたの成績を1〜５の段階で1つ入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+
+//     int num = Integer.parseInt(str);
+
+//     switch(num) {
+//       case 1:
+//         System.out.println("もっと頑張りましょう。");
+//         break;
+//       case 2:
+//         System.out.println("もう少し頑張りましょう。");
+//         break;
+//       case 3:
+//         System.out.println("さらに上を目指しましょう。");
+//         break;
+//       case 4:
+//         System.out.println("たいへんよくできました。");
+//         break;
+//       case 5:
+//         System.out.println("たいへん優秀です。");
+//         break;
+//     }
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int i;
+//     for(i = 1; i <= 5; i++) {
+//       System.out.println(i + "番目の繰り返しです。");
+//     }
+
+//     System.out.println((i-1) + "回繰り返しました。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("いくつ*を出力しますか？");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+    
+//     String str = br.readLine();
+//     int num = Integer.parseInt(str);
+
+//     for(int i = 1; i <= num; i++) {
+//       System.out.print("*");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("いくつまでの合計を求めますか？");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int num = Integer.parseInt(str);
+
+//     int sum = 0;
+//     for(int i = 1; i <= num; i++) {
+//       sum += i;
+//     }
+
+//     System.out.println("1から" + num + "までの合計は" + sum + "です。");
+//   }
+// }
+
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int i = 1;
+
+//     while(i <= 5) {
+//       System.out.println(i + "番目の繰り返しです。");
+//       i++;
+//     }
+
+//     System.out.println("繰り返しが終わりました。");
+//   }
+// }
 
 class Sample1
 {
-  public static void main(String[] args) throws IOException
+  public static void main(String[] args)
   {
-    System.out.println("あなたの成績を1〜５の段階で1つ入力してください。");
+    int i = 1;
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+    do{
+      System.out.println(i + "番目の繰り返しです。");
+      i++;
+    }while(i <= 5);
 
-    String str = br.readLine();
-
-    int num = Integer.parseInt(str);
-
-    switch(num) {
-      case 1:
-        System.out.println("もっと頑張りましょう。");
-        break;
-      case 2:
-        System.out.println("もう少し頑張りましょう。");
-        break;
-      case 3:
-        System.out.println("さらに上を目指しましょう。");
-        break;
-      case 4:
-        System.out.println("たいへんよくできました。");
-        break;
-      case 5:
-        System.out.println("たいへん優秀です。");
-        break;
-    }
+    System.out.println("繰り返しが終わりました。");
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
