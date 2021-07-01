@@ -435,43 +435,95 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class Sample1
-{
-  public static void main(String[] args) throws IOException
-  {
-    System.out.println("科目1〜5の点数を入力してください。");
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("科目1〜5の点数を入力してください。");
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
 
-    String str1 = br.readLine();
-    String str2 = br.readLine();
-    String str3 = br.readLine();
-    String str4 = br.readLine();
-    String str5 = br.readLine();
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+//     String str3 = br.readLine();
+//     String str4 = br.readLine();
+//     String str5 = br.readLine();
 
-    int num1 = 0;
-    int num2 = 0;
-    int num3 = 0;
-    int num4 = 0;
-    int num5 = 0;
-    int num6 = 5;
+//     int num1 = 0;
+//     int num2 = 0;
+//     int num3 = 0;
+//     int num4 = 0;
+//     int num5 = 0;
+//     int num6 = 5;
 
-    num1 = Integer.parseInt(str1);
-    num2 = Integer.parseInt(str2);
-    num3 = Integer.parseInt(str3);
-    num4 = Integer.parseInt(str4);
-    num5 = Integer.parseInt(str5);
+//     num1 = Integer.parseInt(str1);
+//     num2 = Integer.parseInt(str2);
+//     num3 = Integer.parseInt(str3);
+//     num4 = Integer.parseInt(str4);
+//     num5 = Integer.parseInt(str5);
 
-    System.out.println("5科目の合計点は" + (num1 + num2 + num3 + num4 + num5) + "です。");
-    System.out.println("5科目の平均点は" + (((double)num1 + num2 + num3 + num4 + num5) / num6) + "です。");
-  }
-}
+//     System.out.println("5科目の合計点は" + (num1 + num2 + num3 + num4 + num5) + "です。");
+//     System.out.println("5科目の平均点は" + (((double)num1 + num2 + num3 + num4 + num5) / num6) + "です。");
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//       String str = br.readLine();
+//       int res = Integer.parseInt(str);
+
+//       if(res == 1) {
+//         System.out.println("1が入力されました。");
+//       }
+//       else {
+//         System.out.println("1以外が入力されました。");
+//       }
+        
+
+//       System.out.println("処理を終了します。");
+//   }
+// }
 
 
+// import java.io.*;
 
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//       String str = br.readLine();
+//       int res = Integer.parseInt(str);
+
+//       if(res == 1) {
+//         System.out.println("1が入力されました。");
+//       }
+//       else if(res == 2) {
+//         System.out.println("2が入力されました。");
+//       }
+//       else {
+//         System.out.println("1か2を入力してください。");
+//       }        
+
+//       System.out.println("処理を終了します。");
+//   }
+// }
 
 
 
