@@ -525,8 +525,134 @@
 //   }
 // }
 
+// import java.io.*;
 
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を入力してください");
 
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     switch(res) {
+//       case 1:
+//         System.out.println("1が入力されました。");
+//         break;
+//       case 2:
+//         System.out.println("2が入力されました。");
+//         break;
+//       default:
+//         System.out.println("1か2を入力してください。");
+//         break;
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("aかbを入力してください");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+    
+//     String str = br.readLine();
+//     char res = str.charAt(0);
+
+//     switch(res) {
+//       case 'a':
+//         System.out.println("aが入力されました。");
+//         break;
+//       case 'b':
+//         System.out.println("bが入力されました。");
+//         break;
+//       default:
+//         System.out.println("aかbを入力して下さい。");
+//         break;
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("あなたは男性ですか？");
+//     System.out.println("YまたはNを入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+    
+//     String str = br.readLine();
+//     char res = str.charAt(0);
+
+//     if(res == 'Y' || res == 'y') {
+//       System.out.println("あなたは男性ですね。");
+//     }
+//     else if (res == 'N' || res == 'n') {
+//       System.out.println("あなたは女性ですね。");
+//     }
+//     else {
+//       System.out.println("YまたはNを入力してください。");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// public class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("何番目のコースにしますか？");
+//     System.out.println("整数を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     char ans;
+//     if(res == 1)
+//       ans = 'A';
+//     else
+//       ans = 'B';
+
+//     System.out.println(ans + "コースを選択しました。");
+//   }
+// }
+
+// import java.io.*;
+
+// public class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("何番目のコースにしますか？");
+//     System.out.println("整数を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     char ans = (res == 1) ? 'A' : 'B';
+
+//     System.out.println(ans + "コースを選択しました。");
+//   }
+// }
 
 
 
