@@ -888,17 +888,150 @@
 //   }
 // }
 
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("何番目でループを中止しますか？");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     for(int i=1; i <= 10; i++) {
+//       System.out.println(i + "番目の処理です。");
+//       if(i == res)
+//         break;
+//     }
+//   }
+// }
+
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("成績を入力してください。(1〜5)");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     switch(res) {
+//       case 1:
+//       case 2:
+//         System.out.println("もう少しがんばりましょう。");
+//         break;
+//       case 3:
+//       case 4:
+//         System.out.println("この調子で頑張りましょう。");
+//         break;
+//       case 5:
+//         System.out.println("大変優秀です。");
+//         break;
+//       default:
+//         System.out.println("1〜5までの成績を入力してください。");
+//         break;
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("何番目の処理を飛ばしますか？。(1〜10)");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int res = Integer.parseInt(str);
+
+//     for(int i=1; i <= 10; i++) {
+//       if(i == res)
+//         continue;
+//       System.out.println(i + "番目の処理です。");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("1〜10までの偶数を出力します。");
+
+//     for(int i = 1; i <= 10; i++) {
+//       if(i % 2 == 0)
+//         System.out.println(i);
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class Sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("テストの点数を入力してください。（0で終了）");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+    
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+//     String str3 = br.readLine();
+//     String str4 = br.readLine();
+//     String str5 = br.readLine();
+//     String str6 = br.readLine();
+
+//     int num1 = Integer.parseInt(str1);
+//     int num2 = Integer.parseInt(str2);
+//     int num3 = Integer.parseInt(str3);
+//     int num4 = Integer.parseInt(str4);
+//     int num5 = Integer.parseInt(str5);
+//     int num6 = Integer.parseInt(str6);
+
+//     System.out.println("テストの合計点は" + (num1 + num2 + num3 + num4 + num5 + num6) + "です。");
+//   }
+// }
 
 
 
-
-
-
-
-
-
-
-
+// class Sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     int i = 1;
+//     while(i < 10) {
+//       System.out.print((1 * i) + "\t");
+//       System.out.print((2 * i) + "\t");
+//       System.out.print((3 * i) + "\t");
+//       System.out.print((4 * i) + "\t");
+//       System.out.print((5 * i) + "\t");
+//       System.out.print((6 * i) + "\t");
+//       System.out.print((7 * i) + "\t");
+//       System.out.print((8 * i) + "\t");
+//       System.out.print((9 * i) + "\t");
+//       i += 1;
+//       System.out.print("\n");
+//     }
+//   }
+// }
 
 
 
