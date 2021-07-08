@@ -64,4 +64,45 @@
 //   }
 // }
 
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int i = 1;
+//     String s = "*";
+//     while(i < 6) {
+//       System.out.println(s);
+//       s += "*";
+//       i += 1;
+//     }
+//   }
+// }
+
+import java.io.*;
+
+class sample2
+{
+  public static void main(String[] args) throws IOException
+  {
+    System.out.println("2以上の整数を入力してください");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+
+    String str = br.readLine();
+    int i = Integer.parseInt(str);
+    if(i < 2 ) {
+      System.out.println("2以上の整数を入力してください");
+    }
+
+    for(int num = 2; num < i; num++) {
+      if(i % num == 0 || i % Math.sqrt(i) == 0) {
+        System.out.println(i + "は素数ではありません");
+        return;
+      }
+    }
+
+    System.out.println(i + "は素数です");
+  }
+}
 
