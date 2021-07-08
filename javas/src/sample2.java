@@ -78,31 +78,80 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class sample2
-{
-  public static void main(String[] args) throws IOException
-  {
-    System.out.println("2以上の整数を入力してください");
+// class sample2
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("2以上の整数を入力してください");
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
 
-    String str = br.readLine();
-    int i = Integer.parseInt(str);
-    if(i < 2 ) {
-      System.out.println("2以上の整数を入力してください");
-    }
+//     String str = br.readLine();
+//     int i = Integer.parseInt(str);
+//     if(i < 2 ) {
+//       System.out.println("2以上の整数を入力してください");
+//     }
 
-    for(int num = 2; num < i; num++) {
-      if(i % num == 0 || i % Math.sqrt(i) == 0) {
-        System.out.println(i + "は素数ではありません");
-        return;
-      }
-    }
+//     for(int num = 2; num < i; num++) {
+//       if(i % num == 0 || i % Math.sqrt(i) == 0) {
+//         System.out.println(i + "は素数ではありません");
+//         return;
+//       }
+//     }
 
-    System.out.println(i + "は素数です");
-  }
-}
+//     System.out.println(i + "は素数です");
+//   }
+// }
+
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[] test;
+//     test = new int[5];
+//     test[0] = 80;
+//     test[1] = 60;
+//     test[2] = 22;
+//     test[3] = 50;
+//     test[4] = 75;
+
+//     for(int i = 0; i < 5; i++) {
+//       System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class sample2
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("テストの受験者数を入力してください。");
+//     BufferedReader br =
+
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int num = Integer.parseInt(str);
+
+//     int[] test;
+//     test = new int[num];
+
+//     System.out.println("人数分の点数を入力してください。");
+
+//     for(int i = 0; i < num; i++) {
+//       str = br.readLine();
+//       int tmp = Integer.parseInt(str);
+//       test[i] = tmp;
+//     }
+
+//     for(int i = 0; i < num; i++) {
+//       System.out.println((i + 1) + "番目の点数は" + test[i] + "です。");
+//     }
+//   }
+// }
 
