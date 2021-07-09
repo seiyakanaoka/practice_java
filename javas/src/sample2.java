@@ -236,36 +236,72 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class sample2
-{
-  public static void main(String[] args) throws IOException
-  {
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+// class sample2
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
 
-    int[] test = new int[5];
-    System.out.println(test.length + "人の点数を入力してください");
+//     int[] test = new int[5];
+//     System.out.println(test.length + "人の点数を入力してください");
 
-    for(int i = 0; i < test.length; i++) {
-      String str = br.readLine();
-      test[i] = Integer.parseInt(str);
-    }
+//     for(int i = 0; i < test.length; i++) {
+//       String str = br.readLine();
+//       test[i] = Integer.parseInt(str);
+//     }
 
-    for(int s = 0; s < test.length; s++) {
-      for(int t = s + 1; t < test.length; t++) {
-        if(test[t] > test[s]) {
-          int tmp = test[t];
-          test[t] = test[s];
-          test[s] = tmp;
-        }
-      }
-    }
+//     for(int s = 0; s < test.length; s++) {
+//       for(int t = s + 1; t < test.length; t++) {
+//         if(test[t] > test[s]) {
+//           int tmp = test[t];
+//           test[t] = test[s];
+//           test[s] = tmp;
+//         }
+//       }
+//     }
 
-    for(int j = 0; j < test.length; j++) {
-      System.out.println((j + 1) + "番目の人の点数は" + test[j] + "です。");
-    }
-  }
-}
+//     for(int j = 0; j < test.length; j++) {
+//       System.out.println((j + 1) + "番目の人の点数は" + test[j] + "です。");
+//     }
+//   }
+// }
 
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[][] test;
+//     test = new int[2][5];
+
+//     test[0][0] = 80;
+//     test[0][1] = 60;
+//     test[0][2] = 22;
+//     test[0][3] = 50;
+//     test[0][4] = 75;
+//     test[1][0] = 90;
+//     test[1][1] = 55;
+//     test[1][2] = 68;
+//     test[1][3] = 72;
+//     test[1][4] = 58;
+
+//     for(int i = 0; i < 5; i++) {
+//       System.out.println((i + 1) + "番目の人の国語の点数は" + test[0][i] + "です。");
+//       System.out.println((i + 1) + "番目の人の算数の点数は" + test[1][i] + "です。");
+//     }
+//   }
+// }
+
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[][] test = {{80, 60, 22, 50}, {90, 55, 68, 72}, {33, 75, 63}};
+
+//     for(int i = 0; i < test.length; i++) {
+//       System.out.println((i + 1) + "番目の配列の要素の長さは" + test[i].length + "です。");
+//     }
+//   }
+// }
