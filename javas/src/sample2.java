@@ -222,16 +222,50 @@
 //   }
 // }
 
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[] test = {80, 60, 22, 50 ,75};
+
+//     for(int i: test) {
+//       System.out.println((i + 1) + "番目の人の点数は" + i + "です。");
+//     }
+
+//     System.out.println("テストの受験者は" + test.length + "人です。");
+//   }
+// }
+
+import java.io.*;
+
 class sample2
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws IOException
   {
-    int[] test = {80, 60, 22, 50 ,75};
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
 
-    for(int i: test) {
-      System.out.println((i + 1) + "番目の人の点数は" + i + "です。");
+    int[] test = new int[5];
+    System.out.println(test.length + "人の点数を入力してください");
+
+    for(int i = 0; i < test.length; i++) {
+      String str = br.readLine();
+      test[i] = Integer.parseInt(str);
     }
 
-    System.out.println("テストの受験者は" + test.length + "人です。");
+    for(int s = 0; s < test.length; s++) {
+      for(int t = s + 1; t < test.length; t++) {
+        if(test[t] > test[s]) {
+          int tmp = test[t];
+          test[t] = test[s];
+          test[s] = tmp;
+        }
+      }
+    }
+
+    for(int j = 0; j < test.length; j++) {
+      System.out.println((j + 1) + "番目の人の点数は" + test[j] + "です。");
+    }
   }
 }
+
