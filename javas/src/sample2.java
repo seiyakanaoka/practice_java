@@ -338,37 +338,69 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class sample2
-{
-  public static void main(String[] args) throws IOException
-  {
-    System.out.println("5人のテストのテストを入力してください。");
+// class sample2
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("5人のテストのテストを入力してください。");
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
     
-    int[] test = new int[5];
+//     int[] test = new int[5];
 
-    for(int i = 0; i < test.length; i++) {
-      String str = br.readLine();
-      test[i] = Integer.parseInt(str);
-    }
+//     for(int i = 0; i < test.length; i++) {
+//       String str = br.readLine();
+//       test[i] = Integer.parseInt(str);
+//     }
 
-    for(int i = 0; i < test.length; i++) {
-      System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
-    }
+//     for(int i = 0; i < test.length; i++) {
+//       System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+//     }
 
-    for(int s = 0; s < test.length; s++) {
-      for(int t = 1; t < test.length; t++) {
-        if(test[t] > test[s]) {
-          int tmp = test[s];
-          test[s] = test[t];
-          test[t] = tmp;
-        }
-      }
-    }
-    System.out.println("最高点は" + test[0] + "点です。");
+//     for(int s = 0; s < test.length; s++) {
+//       for(int t = 1; t < test.length; t++) {
+//         if(test[t] > test[s]) {
+//           int tmp = test[s];
+//           test[s] = test[t];
+//           test[t] = tmp;
+//         }
+//       }
+//     }
+//     System.out.println("最高点は" + test[0] + "点です。");
+//   }
+// }
+
+class Car
+{
+  int num;
+  double gas;
+
+  void show()
+  {
+    System.out.println("車の" + num + "です。");
+    System.out.println("ガソリン量は" + gas + "です。");
+  }
+
+  void showCar()
+  {
+    System.out.println("これから車の情報を表示します。");
+    show();
+  }
+}
+
+class sample1
+{
+  public static void main(String[] args)
+  {
+    Car car1;
+    car1 = new Car();
+
+    car1.num = 1234;
+    car1.gas = 20.5;
+
+    car1.showCar();
   }
 }
