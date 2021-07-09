@@ -171,10 +171,39 @@ class sample2
 {
   public static void main(String[] args)
   {
-    int[] test = {80, 60, 22, 50, 75};
+    int[] test1;
+    test1 = new int[3];
 
-    for(int i = 0; i < 5; i++) {
-      System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+    System.out.println("test1を宣言しました。");
+    System.out.println("配列要素を確保しました。");
+
+    test1[0] = 80;
+    test1[1] = 60;
+    test1[2] = 22;
+
+    int[] test2;
+    System.out.println("test2を宣言しました。");
+
+    test2 = test1;
+    System.out.println("test2にtest1をしました。");
+
+    for(int i = 0; i < 3; i++) {
+      System.out.println("test1がさす" + (i + 1) + "番目の人の点数は" + test1[i] + "です。");
+    }
+
+    for(int i = 0; i < 3; i++) {
+      System.out.println("test2がさす" + (i + 1) + "番目の人の点数は" + test2[i] + "です。");
+    }
+
+    test1[2] = 100;
+    System.out.println("test1がさす3番目の人の点数を変更します。");
+
+    for(int i = 0; i < 3; i++) {
+      System.out.println("test1がさす" + (i + 1) + "番目の人の点数は" + test1[i] + "です。");
+    }
+
+    for(int i = 0; i < 3; i++) {
+      System.out.println("test2がさす" + (i + 1) + "番目の人の点数は" + test2[i] + "です。");
     }
   }
 }
