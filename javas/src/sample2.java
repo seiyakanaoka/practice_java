@@ -305,3 +305,70 @@
 //     }
 //   }
 // }
+
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[] test;
+//     test = new int[6];
+
+//     test[0] = 80;
+//     test[1] = 60;
+//     test[2] = 22;
+//     test[3] = 50;
+//     test[4] = 75;
+//     test[5] = 100;
+
+//     for(int i = 0; i < 6; i++) {
+//       System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+//     }
+//   }
+// }
+
+// class sample2
+// {
+//   public static void main(String[] args)
+//   {
+//     int[] test = {80, 60, 22, 50, 75, 100};
+
+//     for(int i = 0; i < 6; i++) {
+//       System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+//     }
+//   }
+// }
+
+import java.io.*;
+
+class sample2
+{
+  public static void main(String[] args) throws IOException
+  {
+    System.out.println("5人のテストのテストを入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+    
+    int[] test = new int[5];
+
+    for(int i = 0; i < test.length; i++) {
+      String str = br.readLine();
+      test[i] = Integer.parseInt(str);
+    }
+
+    for(int i = 0; i < test.length; i++) {
+      System.out.println((i + 1) + "番目の人の点数は" + test[i] + "です。");
+    }
+
+    for(int s = 0; s < test.length; s++) {
+      for(int t = 1; t < test.length; t++) {
+        if(test[t] > test[s]) {
+          int tmp = test[s];
+          test[s] = test[t];
+          test[t] = tmp;
+        }
+      }
+    }
+    System.out.println("最高点は" + test[0] + "点です。");
+  }
+}
