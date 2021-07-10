@@ -486,33 +486,79 @@
 //   }
 // }
 
-class Car {
-  int num;
-  double gas;
+// class Car {
+//   int num;
+//   double gas;
 
-  void setNumGas(int n, double g) {
-    num = n;
-    gas = g;
-    System.out.println("車のナンバーを" + num + "にガソリン量を" + gas + "にしました。");
-  }
+//   void setNumGas(int n, double g) {
+//     num = n;
+//     gas = g;
+//     System.out.println("車のナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
 
-  void show() {
-    System.out.println("車のナンバーは" + num + "です。");
-    System.out.println("ガソリン量は" + gas + "です。");
-  }
-}
+//   void show() {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
 
-class sample1 {
-  public static void main(String[] args) {
-    Car car1 = new Car();
+// class sample1 {
+//   public static void main(String[] args) {
+//     Car car1 = new Car();
 
-    int number = 1234;
-    double gasoline = 20.5;
+//     int number = 1234;
+//     double gasoline = 20.5;
 
-    car1.setNumGas(number, gasoline);
-    car1.show();
-    // ⬆︎なぜこれで値がでくるのか？？？？？
-    // setNumGasのメソッドで、先にnumとgasの値をcar1に代入しているから
-    // ちなみに、先にshowを使うと「0」と判断され、setNumGasの後に記述するとちゃんと出てくる
-  }
-}
+//     car1.setNumGas(number, gasoline);
+//     car1.show();
+//     // ⬆︎なぜこれで値がでくるのか？？？？？
+//     // setNumGasのメソッドで、先にnumとgasの値をcar1に代入しているから
+//     // ちなみに、先にshowを使うと「0」と判断され、setNumGasの後に記述するとちゃんと出てくる
+//   }
+// }
+
+
+// class Car {
+//   int num;
+//   double gas;
+
+//   int getNum()
+//   {
+//     System.out.println("ナンバーを調べました。");
+//     return num;
+//   }
+
+//   double getGas()
+//   {
+//     System.out.println("ガソリン量を調べました。");
+//     return gas;
+//   }
+
+//   void setNumGas(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+
+//     System.out.println("車のナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+
+//   void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + num + "です。");
+//   }
+// }
+
+// class sample1 {
+//   public static void main(String[] args) {
+//     Car car1 = new Car();
+
+//     car1.setNumGas(1234, 20.5);
+
+//     int number = car1.getNum();
+//     double gasoline = car1.getGas();
+
+//     System.out.println("サンプルから車を調べたところ");
+//     System.out.println("ナンバーは" + number + "ガソリン量は" + gasoline + "でした。");
+//   }
+// }
