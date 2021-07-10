@@ -562,3 +562,79 @@
 //     System.out.println("ナンバーは" + number + "ガソリン量は" + gasoline + "でした。");
 //   }
 // }
+
+// class Car
+// {
+//   int num;
+//   double gas;
+
+//   void setNumGas(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("車のナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+
+//   void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + num + "です。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car car1 = new Car();
+//     car1.setNumGas(1234, 20.5);
+//     car1.show();
+//   }
+// }
+
+class MyPoint
+{
+  int x;
+  int y;
+
+  void setX(int px)
+  {
+    System.out.println("X座標を設定しました。");
+    x = px;
+  }
+
+  void setY(int py)
+  {
+    System.out.println("Y座標を設定しました。");
+    y = py;
+  }
+
+  int getX()
+  {
+    System.out.println("X座標を取得しました。");
+    return x;
+  }
+
+  int getY()
+  {
+    System.out.println("Y座標を取得しました。");
+    return y;
+  }
+}
+
+class sample1
+{
+  public static void main(String[] args)
+  {
+    MyPoint point = new MyPoint();
+
+    point.setX(10);
+    point.setY(15);
+
+    int xAxis = point.getX();
+    int yAxis = point.getY();
+
+    System.out.println("X,Y座標は、Xが" + xAxis + "Yが" + yAxis + "です。");
+  }
+}
+
