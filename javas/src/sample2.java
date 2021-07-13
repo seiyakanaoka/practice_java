@@ -972,37 +972,128 @@
 //   }
 // }
 
-class Car
+// class Car
+// {
+//   public static int sum = 0;
+
+//   private int num;
+//   private double gas;
+
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     sum++;
+//     System.out.println("車を作成しました。");
+//   }
+
+//   public void setCar(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "ガソリン量を" + gas + "の車を作成しました。");
+//   }
+
+//   public static void showSum()
+//   {
+//     System.out.println("車は全部で" + sum + "台あります。");
+//   }
+
+//   public void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car.showSum();
+
+//     Car car1 = new Car();
+//     car1.setCar(1234, 20.5);
+
+//     Car.showSum();
+
+//     System.out.println("");
+
+//     Car car2 = new Car();
+//     car2.setCar(4567, 30.5);
+//     Car.showSum();
+//   }
+// }
+
+class MyPoint
 {
-  public static int sum = 0;
+  private int x;
+  private int y;
 
-  private int num;
-  private double gas;
+  public static int sum1 = 0;
+  public static int sum2 = 0;
 
-  public Car()
+  public MyPoint()
   {
-    num = 0;
-    gas = 0.0;
-    sum++;
-    System.out.println("車を作成しました。");
+    System.out.println("値を初期化しました。");
+    x = 0;
+    y = 0;
+    sum1 = x;
+    sum2 = y;
   }
 
-  public void setCar(int n, double g)
+  public MyPoint(int px, int py)
   {
-    num = n;
-    gas = g;
-    System.out.println("ナンバーを" + num + "ガソリン量を" + gas + "の車を作成しました。");
+    if(px >= 0 && px <= 100) {
+      x = px;
+    }
+    if(py >= 0 && py <= 100) {
+      y = py;
+    }
+
+    sum1 = x;
+    sum2 = y;
+
+    System.out.println("それぞれ初期値を代入しました");
+  }
+
+  public void setX(int px){
+    if(0 <= px && px <= 100) {
+      x = px;
+    System.out.println("X座標を設定しました。");
+    } else {
+    System.out.println("0~100の数値にしてください。");
+    }
+
+    sum1 = x;
+  }
+
+  public void setY(int py){
+    if(py >= 0 && py <= 100) {
+      y = py;
+    System.out.println("Y座標を設定しました。");
+    } else {
+    System.out.println("0~100の数値にしてください。");
+    }
+
+    sum2 = y;
+  }
+
+  public int getX()
+  {
+    System.out.println("X座標を取得しました。");
+    return x;
+  }
+
+  public int getY()
+  {
+    System.out.println("Y座標を取得しました。");
+    return y;
   }
 
   public static void showSum()
   {
-    System.out.println("車は全部で" + sum + "台あります。");
-  }
-
-  public void show()
-  {
-    System.out.println("車のナンバーは" + num + "です。");
-    System.out.println("ガソリン量は" + gas + "です。");
+    System.out.println("現在の座標は、Xが" + sum1 + "とYが" + sum2 + "です");
   }
 }
 
@@ -1010,17 +1101,39 @@ class sample1
 {
   public static void main(String[] args)
   {
-    Car.showSum();
-
-    Car car1 = new Car();
-    car1.setCar(1234, 20.5);
-
-    Car.showSum();
+    MyPoint point1 = new MyPoint();
+    MyPoint.showSum();
 
     System.out.println("");
 
-    Car car2 = new Car();
-    car2.setCar(4567, 30.5);
-    Car.showSum();
+    point1.setX(10);
+    point1.setY(15);
+    MyPoint.showSum();
+
+    System.out.println("");
+
+    point1.getX();
+    point1.getY();
+    MyPoint.showSum();
+
+    System.out.println("");
+
+    MyPoint point2 = new MyPoint(1, 3);
+    MyPoint.showSum();
+
+    System.out.println("");
+
+    point2.setX(10);
+    point2.setY(15);
+    MyPoint.showSum();
+
+    System.out.println("");
+
+    point2.getX();
+    point2.getY();
+    MyPoint.showSum();
   }
 }
+
+
+
