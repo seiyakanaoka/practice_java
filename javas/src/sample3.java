@@ -93,27 +93,78 @@
 //   }
 // }
 
+// import java.io.*;
+
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("文字列を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+
+//     System.out.println("追加する文字列を入力してください。");
+
+//     String str2 = br.readLine();
+
+//     StringBuffer sb = new StringBuffer(str1);
+//     sb.append(str2);
+
+//     System.out.println(str1 + "に" + str2 + "を追加すると" + sb + "です。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+
+//     int num1 = 10;
+//     double num2 = 10.0;
+//     System.out.println(num1 + (int)num2);
+//   }
+// }
+
+// import java.io.*;
+
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を二つ入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     int num1 = Integer.parseInt(str1);
+//     int num2 = Integer.parseInt(str2);
+
+//     int ans = Math.max(num1, num2);
+
+//     System.out.println(num1 + "と" + num2 + "のうち大きい方は" + ans + "です。");
+//   }
+// }
+
+
 import java.io.*;
 
 class sample1
 {
   public static void main(String[] args) throws IOException
   {
-    System.out.println("文字列を入力してください。");
+    System.out.println("整数を二つ入力してください。");
 
     BufferedReader br =
       new BufferedReader(new InputStreamReader(System.in));
 
-    String str1 = br.readLine();
+    int ans = (int) (Math.random() * 6) + 1;
 
-    System.out.println("追加する文字列を入力してください。");
-
-    String str2 = br.readLine();
-
-    StringBuffer sb = new StringBuffer(str1);
-    sb.append(str2);
-
-    System.out.println(str1 + "に" + str2 + "を追加すると" + sb + "です。");
+    System.out.println( ans);
   }
 }
-
