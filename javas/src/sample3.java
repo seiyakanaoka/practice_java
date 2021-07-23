@@ -225,6 +225,34 @@
 //   }
 // }
 
+import java.io.*;
+
+class sample1
+{
+  public static void main(String[] args) throws IOException
+  {
+    System.out.println("FizzBuzzゲーム開始。好きな数字を入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+    
+    String str = br.readLine();
+
+    int num = Integer.parseInt(str);
+
+    if(num % 3 == 0 && num % 15 == 0) {
+      System.out.println("FizzBuzz");
+    } else if(num % 3 == 0) {
+      System.out.println("Fizz");
+    } else if(num % 5 == 0) {
+      System.out.println("Buzz");
+    } else {
+      System.out.println(num);
+    }
+
+    System.out.println("ゲーム終了");
+  }
+}
 
 
 
