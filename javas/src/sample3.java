@@ -225,34 +225,148 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
+
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("FizzBuzzゲーム開始。好きな数字を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+    
+//     String str = br.readLine();
+
+//     int num = Integer.parseInt(str);
+
+//     if(num % 3 == 0 && num % 15 == 0) {
+//       System.out.println("FizzBuzz");
+//     } else if(num % 3 == 0) {
+//       System.out.println("Fizz");
+//     } else if(num % 5 == 0) {
+//       System.out.println("Buzz");
+//     } else {
+//       System.out.println(num);
+//     }
+
+//     System.out.println("ゲーム終了");
+//   }
+// }
+
+// class Car
+// {
+//   private int num;
+//   private double gas;
+
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     System.out.println("車を作成しました。");
+//   }
+
+//   public void setCar(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+
+//   public void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car car1;
+//     System.out.println("car1を宣言しました。");
+//     car1 = new Car();
+//     car1.setCar(1234, 20.5);
+
+//     Car car2;
+//     System.out.println("car2をしました。");
+
+//     car2 = car1;
+//     System.out.println("car2にcar1を代入しました。");
+
+//     System.out.println("car1がさす");
+//     car1.show();
+//     System.out.println("car2がさす");
+//     car2.show();
+
+//     System.out.println("car1がさす車に変更を加えます。");
+//     car1.setCar(2345, 30.5);
+
+//     System.out.println("car1がさす");
+//     car1.show();
+//     System.out.println("car2がさす");
+//     car2.show();
+//   }
+// }
+
+class Car
+{
+  private int num;
+  private double gas;
+  private String name;
+
+  public Car()
+  {
+    num = 0;
+    gas = 0.0;
+    name = "名無し";
+    System.out.println("車を作成しました。");
+  }
+
+  public void setCar(int n, double g)
+  {
+    num = n;
+    gas = g;
+    System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+  }
+
+  public void setName(String nm)
+  {
+    name = nm;
+    System.out.println("名前を" + name + "にしました。");
+  }
+
+  public void show()
+  {
+    System.out.println("車のナンバーは" + num + "です。");
+    System.out.println("ガソリン量は" + gas + "です。");
+    System.out.println("名前は" + name + "です。");
+  }
+}
 
 class sample1
 {
-  public static void main(String[] args) throws IOException
+  public static void main(String[] args)
   {
-    System.out.println("FizzBuzzゲーム開始。好きな数字を入力してください。");
+    Car car1;
+    car1 = new Car();
 
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
-    
-    String str = br.readLine();
+    car1.show();
 
-    int num = Integer.parseInt(str);
+    int number = 1234;
+    double gasoline = 20.5;
+    String str = "1号車";
 
-    if(num % 3 == 0 && num % 15 == 0) {
-      System.out.println("FizzBuzz");
-    } else if(num % 3 == 0) {
-      System.out.println("Fizz");
-    } else if(num % 5 == 0) {
-      System.out.println("Buzz");
-    } else {
-      System.out.println(num);
-    }
+    car1.setCar(number, gasoline);
+    car1.setName(str);
 
-    System.out.println("ゲーム終了");
+    car1.show();
   }
 }
+
+
+
 
 
 
