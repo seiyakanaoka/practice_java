@@ -365,53 +365,118 @@
 //   }
 // }
 
-class Car
-{
-  private int num;
-  private double gas;
+// class Car
+// {
+//   private int num;
+//   private double gas;
 
-  public Car()
-  {
-    num = 0;
-    gas = 0.0;
-    System.out.println("車を作成しました。");
-  }
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     System.out.println("車を作成しました。");
+//   }
 
-  public void setCar(int n, double g)
-  {
-    num = n;
-    gas = g;
-    System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
-  }
+//   public void setCar(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
 
-  public void show()
+//   public void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car[] cars;
+//     cars = new Car[3];
+
+//     for(int i = 0; i < cars.length; i++) {
+//       cars[i] = new Car();
+//     }
+
+//     cars[0].setCar(1234, 20.5);
+//     cars[1].setCar(2345, 30.5);
+//     cars[2].setCar(3456, 40.5);
+
+//     for(int i = 0; i < cars.length; i++) {
+//       cars[i].show();
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("文字列を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+    
+//     StringBuffer str1 = new StringBuffer(str);
+
+//     str1.reverse();
+
+//     System.out.println(str + "を逆にすると" + str1 + "です。");
+//   }
+// }
+
+// import java.io.*;
+
+// class sample1{
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("文字列を入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+
+//     System.out.println("挿入したい位置の数字を入力してください");
+
+//     String str0 = br.readLine();
+//     int num = Integer.parseInt(str0);
+
+//     StringBuffer str2 = new StringBuffer(str1);
+//     str2.insert(num, 'a');
+
+//     System.out.println(str2);
+//   }
+// }
+
+
+import java.io.*;
+
+class sample1{
+  public static void main(String[] args) throws IOException
   {
-    System.out.println("車のナンバーは" + num + "です。");
-    System.out.println("ガソリン量は" + gas + "です。");
+    System.out.println("整数を２つを入力してください。");
+
+    BufferedReader br =
+      new BufferedReader(new InputStreamReader(System.in));
+
+    String str1 = br.readLine();
+    String str2 = br.readLine();
+
+    int num1 = Integer.parseInt(str1);
+    int num2 = Integer.parseInt(str2);
+
+    int ans = Math.min(num1, num2);
+
+    System.out.println(num1 + "と" + num2 + "で小さい数字は" + ans + "です。");
   }
 }
-
-class sample1
-{
-  public static void main(String[] args)
-  {
-    Car[] cars;
-    cars = new Car[3];
-
-    for(int i = 0; i < cars.length; i++) {
-      cars[i] = new Car();
-    }
-
-    cars[0].setCar(1234, 20.5);
-    cars[1].setCar(2345, 30.5);
-    cars[2].setCar(3456, 40.5);
-
-    for(int i = 0; i < cars.length; i++) {
-      cars[i].show();
-    }
-  }
-}
-
-
-
 
