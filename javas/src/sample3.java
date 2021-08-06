@@ -796,27 +796,68 @@ import java.nio.file.NotLinkException;
 //   }
 // }
 
+// class Car
+// {
+//   protected int num;
+//   protected double gas;
+
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     System.out.println("車を作成しました。");
+//   }
+// }
+
+// class RacingCar extends Car
+// {
+//   private int course;
+
+//   public RacingCar()
+//   {
+//     course = 0;
+//     System.out.println("レーシングカーを作成しました。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car[] cars;
+//     cars = new Car[2];
+
+//     cars[0] = new Car();
+//     cars[1] = new RacingCar();
+
+//     for(int i = 0; i < cars.length; i++) {
+//       Class cl = cars[i].getClass();
+//       System.out.println((i + 1) + "番目のオブジェクトクラスは" + cl + "です。");
+//     }
+//   }
+// }
+
 class Car
 {
   protected int num;
   protected double gas;
-
+  
   public Car()
   {
     num = 0;
     gas = 0.0;
     System.out.println("車を作成しました。");
   }
-}
-
-class RacingCar extends Car
-{
-  private int course;
-
-  public RacingCar()
+  public void setCar(int n, double g)
   {
-    course = 0;
-    System.out.println("レーシングカーを作成しました。");
+    num = n;
+    gas = g;
+    System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+  }
+  public String toString()
+  {
+    String str = "ナンバー" + num + "ガソリン量" + gas + "の車";
+    return str;
   }
 }
 
@@ -824,15 +865,12 @@ class sample1
 {
   public static void main(String[] args)
   {
-    Car[] cars;
-    cars = new Car[2];
+    Car cars = new Car();
 
-    cars[0] = new Car();
-    cars[1] = new RacingCar();
-
-    for(int i = 0; i < cars.length; i++) {
-      Class cl = cars[i].getClass();
-      System.out.println((i + 1) + "番目のオブジェクトクラスは" + cl + "です。");
-    }
+    cars.setCar(1234, 20.5);
+    System.out.println(cars + "です。");
   }
 }
+
+
+
