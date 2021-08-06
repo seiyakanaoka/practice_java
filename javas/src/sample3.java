@@ -1,3 +1,5 @@
+import java.nio.file.NotLinkException;
+
 // class sample1
 // {
 //   public static void main(String arg[])
@@ -458,25 +460,137 @@
 // }
 
 
-import java.io.*;
+// import java.io.*;
 
-class sample1{
-  public static void main(String[] args) throws IOException
+// class sample1{
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("整数を２つを入力してください。");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str1 = br.readLine();
+//     String str2 = br.readLine();
+
+//     int num1 = Integer.parseInt(str1);
+//     int num2 = Integer.parseInt(str2);
+
+//     int ans = Math.min(num1, num2);
+
+//     System.out.println(num1 + "と" + num2 + "で小さい数字は" + ans + "です。");
+//   }
+// }
+
+// class Car
+// {
+//   private int num;
+//   private double gas;
+
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     System.out.println("車を作成しました。");
+//   }
+//   public void setCar(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+//   public void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
+
+// class RacingCar extends Car
+// {
+//   private int course;
+
+//   public RacingCar()
+//   {
+//     course = 0;
+//     System.out.println("レーシングカーを作成しました。");
+//   }
+//   public void setCourse(int c)
+//   {
+//     course = c;
+//     System.out.println("コース番号を" + course + "にしました。");
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     RacingCar rccar1;
+//     rccar1 = new RacingCar();
+
+//     rccar1.setCar(1234, 20.5);
+//     rccar1.setCourse(5);
+//   }
+// }
+
+class Car
+{
+  private int num;
+  private double gas;
+
+  public Car()
   {
-    System.out.println("整数を２つを入力してください。");
-
-    BufferedReader br =
-      new BufferedReader(new InputStreamReader(System.in));
-
-    String str1 = br.readLine();
-    String str2 = br.readLine();
-
-    int num1 = Integer.parseInt(str1);
-    int num2 = Integer.parseInt(str2);
-
-    int ans = Math.min(num1, num2);
-
-    System.out.println(num1 + "と" + num2 + "で小さい数字は" + ans + "です。");
+    num = 0;
+    gas = 0.0;
+    System.out.println("車を作成しました。");
+  }
+  public Car(int n, double g)
+  {
+    num = n;
+    gas = g;
+    System.out.println("ナンバー" + num + "ガソリン量" + gas + "の車を作成しました。");
+  }
+  public void setCar(int n, double g)
+  {
+    num = n;
+    gas = g;
+    System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+  }
+  public void show()
+  {
+    System.out.println("車のナンバーは" + num + "です。");
+    System.out.println("ガソリン量は" + gas + "です。");
   }
 }
 
+class RacingCar extends Car
+{
+  private int course;
+
+  public RacingCar()
+  {
+    course = 0;
+    System.out.println("レーシングカーを作成しました。");
+  }
+  public RacingCar(int n, double g, int c)
+  {
+    super(n, g);
+    course = c;
+    System.out.println("コース番号" + course + "のレーシングカーを作成しました。");
+  }
+  public void setCourse(int c)
+  {
+    course = c;
+    System.out.println("コース番号を" + course + "にしました。");
+  }
+}
+
+class sample1
+{
+  public static void main(String[] args)
+  {
+    RacingCar rccar1 = new RacingCar(1234, 20.5, 5);
+    RacingCar rccar2 = new RacingCar();
+  }
+}
