@@ -650,83 +650,83 @@ import java.nio.file.NotLinkException;
 //   }
 // }
 
-class Car
-{
-  protected int num;
-  protected double gas;
+// class Car
+// {
+//   protected int num;
+//   protected double gas;
 
-  public Car()
-  {
-    num = 0;
-    gas = 0.0;
-    System.out.println("車を作成しました。");
-  }
-  public void setCar(int n, double g)
-  {
-    num = n;
-    gas = g;
-    System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
-  }
-  public void show()
-  {
-    System.out.println("車のナンバーは" + num + "です。");
-    System.out.println("ガソリン量は" + gas + "です。");
-  }
-}
+//   public Car()
+//   {
+//     num = 0;
+//     gas = 0.0;
+//     System.out.println("車を作成しました。");
+//   }
+//   public void setCar(int n, double g)
+//   {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+//   public final void show()
+//   {
+//     System.out.println("車のナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//   }
+// }
 
-class RacingCar extends Car
-{
-  private int course;
+// class RacingCar extends Car
+// {
+//   private int course;
 
-  public RacingCar()
-  {
-    course = 0;
-    System.out.println("レーシングカーを作成しました。");
-  }
-  public void setCourse(int c)
-  {
-    course = c;
-    System.out.println("コース番号を" + course + "にしました。");
-  }
-  public void show()
-  {
-    System.out.println("レーシングカーのナンバーは" + num + "です。");
-    System.out.println("ガソリン量は" + gas + "です。");
-    System.out.println("コース番号は" + course + "です。");
-  }
-}
+//   public RacingCar()
+//   {
+//     course = 0;
+//     System.out.println("レーシングカーを作成しました。");
+//   }
+//   public void setCourse(int c)
+//   {
+//     course = c;
+//     System.out.println("コース番号を" + course + "にしました。");
+//   }
+//   public void show()
+//   {
+//     System.out.println("レーシングカーのナンバーは" + num + "です。");
+//     System.out.println("ガソリン量は" + gas + "です。");
+//     System.out.println("コース番号は" + course + "です。");
+//   }
+// }
+
+// // class sample1
+// // {
+// //   public static void main(String[] args)
+// //   {
+// //     Car car1;
+// //     car1 = new RacingCar();
+
+// //     car1.setCar(1234, 20.5);
+
+// //     car1.show();
+// //   }
+// // }
 
 // class sample1
 // {
 //   public static void main(String[] args)
 //   {
-//     Car car1;
-//     car1 = new RacingCar();
+//     Car[] cars;
+//     cars = new Car[2];
 
-//     car1.setCar(1234, 20.5);
+//     cars[0] = new Car();
+//     cars[0].setCar(1234, 20.5);
 
-//     car1.show();
+//     cars[1] = new RacingCar();
+//     cars[1].setCar(4567, 30.5);
+
+//     System.out.println();
+
+//     for(int i = 0; i < cars.length; i++) {
+//       cars[i].show();
+//     }
 //   }
 // }
-
-class sample1
-{
-  public static void main(String[] args)
-  {
-    Car[] cars;
-    cars = new Car[2];
-
-    cars[0] = new Car();
-    cars[0].setCar(1234, 20.5);
-
-    cars[1] = new RacingCar();
-    cars[1].setCar(4567, 30.5);
-
-    System.out.println();
-
-    for(int i = 0; i < cars.length; i++) {
-      cars[i].show();
-    }
-  }
-}
 
