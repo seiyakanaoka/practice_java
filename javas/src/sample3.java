@@ -696,17 +696,37 @@ class RacingCar extends Car
   }
 }
 
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Car car1;
+//     car1 = new RacingCar();
+
+//     car1.setCar(1234, 20.5);
+
+//     car1.show();
+//   }
+// }
+
 class sample1
 {
   public static void main(String[] args)
   {
-    RacingCar rccar1;
-    rccar1 = new RacingCar();
+    Car[] cars;
+    cars = new Car[2];
 
-    rccar1.setCar(1234, 20.5);
-    rccar1.setCourse(5);
+    cars[0] = new Car();
+    cars[0].setCar(1234, 20.5);
 
-    rccar1.show();
+    cars[1] = new RacingCar();
+    cars[1].setCar(4567, 30.5);
+
+    System.out.println();
+
+    for(int i = 0; i < cars.length; i++) {
+      cars[i].show();
+    }
   }
 }
 
