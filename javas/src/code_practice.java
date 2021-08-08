@@ -120,3 +120,36 @@
 //   }
 // }
 
+//  数当てゲーム  ------------------>
+
+// import java.util.Random;
+// import java.io.*;
+
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     System.out.println("数当てゲームを開始します。好きな数字を入力してください。");
+
+//     Random r = new Random();
+//     int ans = r.nextInt(10);
+//     int my_ans = 10;
+//     while(ans != my_ans) {
+//       String str = br.readLine();
+//       my_ans = Integer.parseInt(str);
+//       if(ans == my_ans) {
+//         System.out.println("おめでとう！正解だよ！");
+//       } else if(ans > my_ans) {
+//         System.out.println("もっと大きいよ！");
+//       } else if(ans < my_ans) {
+//         System.out.println("もっと小さいよ！");
+//       }
+//     }
+
+//   }
+// }
+
+//  数当てゲーム応用  ------------------>
