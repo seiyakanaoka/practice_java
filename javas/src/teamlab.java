@@ -57,3 +57,49 @@
 
 // 第3問 -------------------->
 
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     double ans = 0.0;
+//     int count = 0;
+//     for(double i = 1.0; ans <= 15; i++) {
+//       count += 1;
+//       ans += 1 / i;
+//     }
+//     System.out.println(ans);
+//     System.out.println(count)
+//     ;
+//   }
+// }
+
+// 第4問 -------------------->
+
+// class Henkan
+// {
+//   public Henkan()
+//   {
+//     System.out.println("文字列への変換機能を実装しました。");
+//   }
+//   public String Show(int a)
+//   {
+//     String str = Integer.toString(a);
+//     return str;
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     Henkan henkan = new Henkan();
+//     int ans = 0;
+//     for(int i = 1; i <= 20000; i++) {
+//       if(i % 3 == 0 || henkan.Show(i).contains("3")) {
+//         ans += i;
+//       }
+//     }
+//     System.out.println(ans);
+//   }
+// }
+
