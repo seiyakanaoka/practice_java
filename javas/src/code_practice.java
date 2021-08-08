@@ -152,4 +152,25 @@
 //   }
 // }
 
-//  数当てゲーム応用  ------------------>
+// class Car
+// {
+//   protected int num;
+// }
+// class RacingCar extends Car
+// {
+//   void show(int n)
+//   {
+//     num = n;
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     RacingCar rc1 = new RacingCar();
+
+//     rc1.show(10);
+//     System.out.println(rc1.num);
+//   }
+// }
