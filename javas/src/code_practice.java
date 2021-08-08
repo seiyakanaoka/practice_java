@@ -174,3 +174,38 @@
 //     System.out.println(rc1.num);
 //   }
 // }
+
+//  twoSum  ------------------>
+
+// import java.util.Arrays;
+
+// class Solution {
+//   public int[] twoSum(int[] nums, int target) {
+//     int[] result = new int[2];
+//     for(int i = 0; i < nums.length; i++) {
+//       System.out.println(i);
+//         for(int x = 1; x < nums.length; x++) {
+//           System.out.println(x + "x");
+//             if (nums[i] + nums[x] == target) {
+//               result[0] = i;
+//               result[1] = x;
+//               break;
+//             }
+//         }
+//       if(result.length == 2) {
+//         break;
+//       }
+//     }
+//   return result;
+//   }
+// }
+
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//       int[] arrays = {3, 2, 4};
+//       Solution sol = new Solution();
+//       System.out.println(Arrays.toString(sol.twoSum(arrays, 6)));
+//   }
+// }
