@@ -209,6 +209,3 @@
 //       System.out.println(Arrays.toString(sol.twoSum(arrays, 6)));
 //   }
 // }
-
-
-// a
