@@ -100,3 +100,23 @@
 //     }
 //   }
 // }
+
+//  平方根を求める  ------------------>
+
+// import java.io.*;
+// class sample1
+// {
+//   public static void main(String[] args) throws IOException
+//   {
+//     System.out.println("平方根を求めてみる");
+
+//     BufferedReader br =
+//       new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int ans = Integer.parseInt(str);
+
+//     System.out.println(Math.sqrt(ans));
+//   }
+// }
+
