@@ -311,47 +311,93 @@
 // }
 
 
-class CarException extends Exception
-{
-}
+// class CarException extends Exception
+// {
+// }
 
-class Car
-{
-    private int num;
-    private double gas;
+// class Car
+// {
+//     private int num;
+//     private double gas;
 
-    public Car()
-    {
-        num = 0;
-        gas = 0.0;
-        System.out.println("車を作成しました。");
-    }
-    public void setCar(int n, double g) throws CarException
-    {
-        if(g < 0){
-            CarException e = new CarException();
-            throw e;
-        }
-        else {
-            num = n;
-            gas = g;
-            System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
-        }
-    }
-    public void show()
-    {
-        System.out.println("車のナンバーは" + num + "です。");
-        System.out.println("ガソリン量は" + gas + "です。");
-    }
-}
+//     public Car()
+//     {
+//         num = 0;
+//         gas = 0.0;
+//         System.out.println("車を作成しました。");
+//     }
+//     public void setCar(int n, double g) throws CarException
+//     {
+//         if(g < 0){
+//             CarException e = new CarException();
+//             throw e;
+//         }
+//         else {
+//             num = n;
+//             gas = g;
+//             System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//         }
+//     }
+//     public void show()
+//     {
+//         System.out.println("車のナンバーは" + num + "です。");
+//         System.out.println("ガソリン量は" + gas + "です。");
+//     }
+// }
 
-class sample1
-{
-    public static void main(String[] args)
-    throws CarException
-    {
-        Car car1 = new Car();
-        car1.setCar(1234, -10.0);
-        car1.show();
-    }
-}
+// class sample1
+// {
+//     public static void main(String[] args)
+//     throws CarException
+//     {
+//         Car car1 = new Car();
+//         car1.setCar(1234, -10.0);
+//         car1.show();
+//     }
+// }
+
+// import java.io.*;
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         try{
+//             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("test1.txt")));
+
+//             pw.println("Hello!");
+//             pw.println("Goodbye!");
+//             System.out.println("ファイルに書き込みました。");
+
+//             pw.close();
+//         }
+//         catch(IOException e){
+//             System.out.println("入出力エラーです。");
+//         }
+//     }
+// }
+
+// import java.io.*;
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         try{
+//             BufferedReader br =
+//                 new BufferedReader(new FileReader("test1.txt"));
+
+//             String str1 = br.readLine();
+//             String str2 = br.readLine();
+
+//             System.out.println("ファイルに書き込まれている2つの文字列は");
+//             System.out.println(str1 + "です。");
+//             System.out.println(str2 + "です。");
+
+//             br.close();
+//         }
+//         catch(IOException e) {
+//             System.out.println("入出力エラーです。");
+//         }
+//     }
+// }
