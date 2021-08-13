@@ -441,6 +441,32 @@
 //     }
 // }
 
+// import java.io.*;
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         if(args.length != 1) {
+//             System.out.println("ファイル名を正しく指定してください。");
+//             System.exit(1);
+//         }
+//         try{
+//             BufferedReader br =
+//                 new BufferedReader(new FileReader(args[0]));
+            
+//             String str;
+//             while((str = br.readLine()) != null) {
+//                 System.out.println(str);
+//             }
+//             br.close();
+//         }
+//         catch(IOException e) {
+//             System.out.println("入出力エラーです。");
+//         }
+//     }
+// }
+
 import java.io.*;
 
 class sample1
@@ -448,20 +474,28 @@ class sample1
     public static void main(String[] args)
     {
         if(args.length != 1) {
-            System.out.println("ファイル名を正しく指定してください。");
+            System.out.println("ファイル名を正しく入力してください。");
             System.exit(1);
         }
         try{
+            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("test1.txt")));
+
+            pw.println("A long time ago,");
+            pw.println("There was a little girl");
+            System.out.println("ファイルに書き込みました。");
+
+            pw.close();
+
             BufferedReader br =
                 new BufferedReader(new FileReader(args[0]));
-            
+
             String str;
-            while((str = br.readLine()) != null) {
+            while((str =br.readLine()) != null) {
                 System.out.println(str);
             }
             br.close();
         }
-        catch(IOException e) {
+        catch(IOException e){
             System.out.println("入出力エラーです。");
         }
     }
