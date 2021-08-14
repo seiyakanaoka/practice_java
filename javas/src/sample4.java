@@ -501,6 +501,44 @@
 //     }
 // }
 
+// class Car extends Thread
+// {
+//     private String name;
+
+//     public Car(String nm)
+//     {
+//         name = nm;
+//     }
+//     public void run()
+//     {
+//         for(int i = 0; i < 5; i++)
+//         {
+//             try{
+//                 sleep(1000);
+//                 System.out.println(name + "の処理をしています。");
+//             }
+//             catch(InterruptedException e){}
+//         }
+//     }
+// }
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         Car car1 = new Car("1号車");
+//         car1.start();
+
+//         Car car2 = new Car("2号車");
+//         car2.start();
+
+//         for(int i = 0; i < 5; i++)
+//         {
+//             System.out.println("main()の処理をしています。");
+//         }
+//     }
+// }
+
 class Car extends Thread
 {
     private String name;
@@ -513,10 +551,11 @@ class Car extends Thread
     {
         for(int i = 0; i < 5; i++)
         {
-            System.out.println(name + "の処理をしています。");
+           System.out.println(name + "の処理をしています。");
         }
     }
 }
+
 
 class sample1
 {
@@ -525,12 +564,13 @@ class sample1
         Car car1 = new Car("1号車");
         car1.start();
 
-        Car car2 = new Car("2号車");
-        car2.start();
-
         for(int i = 0; i < 5; i++)
         {
-            System.out.println("main()の処理をしています。");
+            try{
+                Thread.sleep(1000);
+                System.out.println("main()の処理をしています。");
+            }
+            catch(InterruptedException e){}
         }
     }
 }
