@@ -467,36 +467,70 @@
 //     }
 // }
 
-import java.io.*;
+// import java.io.*;
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         if(args.length != 1) {
+//             System.out.println("ファイル名を正しく入力してください。");
+//             System.exit(1);
+//         }
+//         try{
+//             PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("test1.txt")));
+
+//             pw.println("A long time ago,");
+//             pw.println("There was a little girl");
+//             System.out.println("ファイルに書き込みました。");
+
+//             pw.close();
+
+//             BufferedReader br =
+//                 new BufferedReader(new FileReader(args[0]));
+
+//             String str;
+//             while((str =br.readLine()) != null) {
+//                 System.out.println(str);
+//             }
+//             br.close();
+//         }
+//         catch(IOException e){
+//             System.out.println("入出力エラーです。");
+//         }
+//     }
+// }
+
+class Car extends Thread
+{
+    private String name;
+
+    public Car(String nm)
+    {
+        name = nm;
+    }
+    public void run()
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println(name + "の処理をしています。");
+        }
+    }
+}
 
 class sample1
 {
     public static void main(String[] args)
     {
-        if(args.length != 1) {
-            System.out.println("ファイル名を正しく入力してください。");
-            System.exit(1);
-        }
-        try{
-            PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("test1.txt")));
+        Car car1 = new Car("1号車");
+        car1.start();
 
-            pw.println("A long time ago,");
-            pw.println("There was a little girl");
-            System.out.println("ファイルに書き込みました。");
+        Car car2 = new Car("2号車");
+        car2.start();
 
-            pw.close();
-
-            BufferedReader br =
-                new BufferedReader(new FileReader(args[0]));
-
-            String str;
-            while((str =br.readLine()) != null) {
-                System.out.println(str);
-            }
-            br.close();
-        }
-        catch(IOException e){
-            System.out.println("入出力エラーです。");
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println("main()の処理をしています。");
         }
     }
 }
