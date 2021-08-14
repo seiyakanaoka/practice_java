@@ -608,19 +608,64 @@
 //     }
 // }
 
-class Car implements Runnable
-{
-    private String name;
+// class Car implements Runnable
+// {
+//     private String name;
 
-    public Car(String nm)
+//     public Car(String nm)
+//     {
+//         name = nm;
+//     }
+//     public void run()
+//     {
+//         for(int i = 0; i < 5; i++)
+//         {
+//             System.out.println(name + "の処理をしています。");
+//         }
+//     }
+// }
+
+// class sample1
+// {
+//     public static void main(String[] args)
+//     {
+//         Car car1 = new Car("1号車");
+//         Thread th1 = new Thread(car1);
+//         th1.start();
+
+//         for(int i = 0; i < 5; i++)
+//         {
+//             System.out.println("main()の処理をしています。");
+//         }
+//     }
+// }
+
+class Company
+{
+    private int sum = 0;
+    public synchronized void add(int a)
     {
-        name = nm;
+        int tmp = sum;
+        System.out.println("現在、合計金額は" + tmp + "円です。");
+        System.out.println(a + "円稼ぎました。");
+        tmp = tmp + a;
+        System.out.println("合計金額を" + tmp + "円にします。");
+        sum = tmp;
+    }
+}
+
+class Driver extends Thread
+{
+    private Company comp;
+    public Driver(Company c)
+    {
+        comp = c;
     }
     public void run()
     {
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 3; i++)
         {
-            System.out.println(name + "の処理をしています。");
+            comp.add(50);
         }
     }
 }
@@ -629,13 +674,12 @@ class sample1
 {
     public static void main(String[] args)
     {
-        Car car1 = new Car("1号車");
-        Thread th1 = new Thread(car1);
-        th1.start();
+        Company cmp = new Company();
 
-        for(int i = 0; i < 5; i++)
-        {
-            System.out.println("main()の処理をしています。");
-        }
+        Driver drv1 = new Driver(cmp);
+        drv1.start();
+
+        Driver drv2 = new Driver(cmp);
+        drv2.start();
     }
 }
