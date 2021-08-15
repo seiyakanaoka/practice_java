@@ -192,53 +192,277 @@
 //   }
 // }
 
-import java.awt.*;
-import java.awt.event.*;
+// import java.awt.*;
+// import java.awt.event.*;
 
-class sample1 extends Frame implements Runnable
-{
-  int num;
+// class sample1 extends Frame implements Runnable
+// {
+//   int num;
 
-  public static void main(String[] args)
-  {
-    sample1 sm = new sample1();
-  }
-  public sample1()
-  {
-    super("サンプル");
+//   public static void main(String[] args)
+//   {
+//     sample1 sm = new sample1();
+//   }
+//   public sample1()
+//   {
+//     super("サンプル");
 
-    addWindowListener(new SampleWindowListener());
+//     addWindowListener(new SampleWindowListener());
 
-    Thread th;
-    th = new Thread(this);
-    th.start();
+//     Thread th;
+//     th = new Thread(this);
+//     th.start();
 
-    setSize(750, 600);
-    setVisible(true);
-  }
-  public void run()
-  {
-    try{
-      for(int i = 0; i < 10; i++)
-      {
-        num = i;
-        repaint();
-        Thread.sleep(1000);
-      }
-    }
-    catch(InterruptedException e){}
-  }
-  public void paint(Graphics g)
-  {
-    String str = num + "です。";
-    g.drawString(str, 100, 100);
-  }
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+//   public void run()
+//   {
+//     try{
+//       for(int i = 0; i < 10; i++)
+//       {
+//         num = i;
+//         repaint();
+//         Thread.sleep(1000);
+//       }
+//     }
+//     catch(InterruptedException e){}
+//   }
+//   public void paint(Graphics g)
+//   {
+//     String str = num + "です。";
+//     g.drawString(str, 100, 100);
+//   }
 
-  class SampleWindowListener extends WindowAdapter
-  {
-    public void windowClosing(WindowEvent e)
-    {
-      System.exit(0);
-    }
-  }
-}
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+// }
+
+// import java.awt.*;
+// import java.awt.event.*;
+
+// class sample1 extends Frame
+// {
+//   private Label lb;
+//   public static void main(String[] args)
+//   {
+//     sample1 sm = new sample1();
+//   }
+//   public sample1()
+//   {
+//     super("サンプル");
+
+//     lb = new Label("Hello");
+
+//     add(lb);
+
+//     lb.setForeground(Color.blue);
+//     lb.setFont(new Font("Serif", Font.ITALIC, 32));
+
+//     addWindowListener(new SampleWindowListener());
+
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+// }
+
+// import java.awt.*;
+// import java.awt.event.*;
+
+// class sample1 extends Frame {
+//   public static void main(String[] args) {
+//     sample1 sm = new sample1();
+//   }
+
+//   public sample1()
+//   {
+//     super("サンプル");
+
+//     addWindowListener(new SampleWindowListener());
+
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+//   public void paint(Graphics g)
+//   {
+//     g.setColor(Color.GREEN);
+//     g.fillRect(50, 50, 100, 100);
+//   }
+
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+// }
+
+// import java.awt.*;
+// import java.awt.event.*;
+
+// class sample1 extends Frame
+// {
+//   int x = 10;
+//   int y = 10;
+//   Image im;
+//   public static void main(String[] args)
+//   {
+//     sample1 sm = new sample1();
+//   }
+//   public sample1()
+//   {
+//     super("サンプル");
+
+//     addWindowListener(new SampleWindowListener());
+//     addMouseListener(new SampleMouseAdapter());
+
+//     Toolkit tk = getToolkit();
+//     im = tk.getImage("Image.jpg");
+
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+//   public void paint(Graphics g)
+//   {
+//     g.drawImage(im, x, y, this);
+//   }
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+//   class SampleMouseAdapter extends MouseAdapter
+//   {
+//     public void mousePressed(MouseEvent e)
+//     {
+//       x = e.getX();
+//       y = e.getY();
+//       repaint();
+//     }
+//   }
+// }
+
+// import java.awt.*;
+// import java.awt.event.*;
+
+// class sample1 extends Frame {
+
+//   boolean bl;
+
+//   public static void main(String[] args) {
+//     sample1 sm = new sample1();
+//   }
+
+//   public sample1()
+//   {
+//     super("サンプル");
+
+//     addWindowListener(new SampleWindowListener());
+//     addMouseListener(new SampleMouseListener());
+
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+//   public void paint(Graphics g)
+//   {
+//     if(bl == true) {
+//       g.drawString("こんにちは。", 100, 100);
+//     }
+//     else {
+//       g.drawString("さようなら。", 100, 100);
+//     }
+
+//   }
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+//   class SampleMouseListener implements MouseListener
+//   {
+//     public void mouseClicked(MouseEvent e){}
+//     public void mouseReleased(MouseEvent e){}
+//     public void mousePressed(MouseEvent e){}
+//     public void mouseEntered(MouseEvent e)
+//     {
+//       bl = true;
+//       repaint();
+//     }
+//     public void mouseExited(MouseEvent e)
+//     {
+//       bl = false;
+//       repaint();
+//     }
+//   }
+// }
+
+// import java.awt.*;
+// import java.awt.event.*;
+
+// class sample1 extends Frame implements Runnable
+// {
+//   int num;
+//   int psx;
+
+//   public static void main(String[] args)
+//   {
+//     sample1 sm = new sample1();
+//   }
+//   public sample1()
+//   {
+//     super("サンプル");
+
+//     addWindowListener(new SampleWindowListener());
+
+//     Thread th;
+//     th = new Thread(this);
+//     th.start();
+
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
+//   public void run()
+//   {
+//     try{
+//       for(int i = 0; i < 10; i++)
+//       {
+//         num = i;
+//         psx = i * 10;
+//         repaint();
+//         Thread.sleep(1000);
+//       }
+//     }
+//     catch(InterruptedException e){}
+//   }
+//   public void paint(Graphics g)
+//   {
+//     String str = num + "です。";
+//     g.drawString(str, 100 + psx, 100);
+//   }
+
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+// }
