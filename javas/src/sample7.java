@@ -62,43 +62,51 @@
 //   }
 // }
 
-import java.awt.*;
-import java.awt.event.*;
+// import java.awt.*;
+// import java.awt.event.*;
 
-class sample1 extends Frame
-{
-  private Button bt;
-  public static void main(String[] args)
-  {
-    sample1 sm = new sample1();
-  }
-  public sample1()
-  {
-    super("サンプル");
+// class sample1 extends Frame
+// {
+//   private Button bt;
+//   public static void main(String[] args)
+//   {
+//     sample1 sm = new sample1();
+//   }
+//   public sample1()
+//   {
+//     super("サンプル");
 
-    bt = new Button("ようこそ");
+//     bt = new Button("ようこそ");
 
-    add(bt);
+//     add(bt);
 
-    addWindowListener(new SampleWindowListener());
-    bt.addActionListener(new SampleActionListener());
+//     addWindowListener(new SampleWindowListener());
+//     bt.addMouseListener(new SampleMouseListener());
 
-    setSize(750, 600);
-    setVisible(true);
-  }
+//     setSize(750, 600);
+//     setVisible(true);
+//   }
 
-  class SampleWindowListener extends WindowAdapter
-  {
-    public void windowClosing(WindowEvent e)
-    {
-      System.exit(0);
-    }
-  }
-  class SampleActionListener implements ActionListener
-  {
-    public void actionPerformed(ActionEvent e)
-    {
-      bt.setLabel("こんにちわ。");
-    }
-  }
-}
+//   class SampleWindowListener extends WindowAdapter
+//   {
+//     public void windowClosing(WindowEvent e)
+//     {
+//       System.exit(0);
+//     }
+//   }
+//   class SampleMouseListener implements MouseListener
+//   {
+//     public void mouseClicked(MouseEvent e){}
+//     public void mouseReleased(MouseEvent e){}
+//     public void mousePressed(MouseEvent e){}
+//     public void mouseEntered(MouseEvent e)
+//     {
+//       bt.setLabel("いらっしゃいませ。");
+//     }
+//     public void mouseExited(MouseEvent e)
+//     {
+//       bt.setLabel("ようこそ。");
+//     }
+//   }
+// }
+
