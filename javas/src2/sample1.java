@@ -6,8 +6,6 @@
 //   }
 // }
 
-import com.apple.eawt.Application;
-
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
