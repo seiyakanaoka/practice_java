@@ -871,6 +871,30 @@ import java.nio.file.NotLinkException;
 //     System.out.println(cars + "です。");
 //   }
 // }
+import java.util.ArrayList;
+import java.util.Arrays;
 
+
+
+
+class sample1
+{
+  public static void main(String[] args)
+  {
+    ArrayList<Integer> is = new ArrayList<Integer>();
+    ArrayList<Integer> inter = new ArrayList<Integer>();
+    int i = 1;
+    while (i <= 5) {
+      is.add(0 + i);
+      i += 1;
+    }
+    System.out.println(is);
+
+    inter = is;
+
+    System.out.println(is);
+    System.out.println(inter);
+  }
+}
 
 
