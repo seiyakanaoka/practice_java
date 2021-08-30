@@ -1,4 +1,4 @@
-import java.nio.file.NotLinkException;
+// import java.nio.file.NotLinkException;
 
 // class sample1
 // {
@@ -871,30 +871,101 @@ import java.nio.file.NotLinkException;
 //     System.out.println(cars + "です。");
 //   }
 // }
-import java.util.ArrayList;
-import java.util.Arrays;
+// import java.util.ArrayList;
+// import java.util.Arrays;
 
 
 
 
-class sample1
-{
-  public static void main(String[] args)
-  {
-    ArrayList<Integer> is = new ArrayList<Integer>();
-    ArrayList<Integer> inter = new ArrayList<Integer>();
-    int i = 1;
-    while (i <= 5) {
-      is.add(0 + i);
-      i += 1;
-    }
-    System.out.println(is);
+// class sample1
+// {
+//   public static void main(String[] args)
+//   {
+//     ArrayList<Integer> is = new ArrayList<Integer>();
+//     ArrayList<Integer> inter = new ArrayList<Integer>();
+//     int i = 1;
+//     while (i <= 5) {
+//       is.add(0 + i);
+//       i += 1;
+//     }
+//     System.out.println(is);
 
-    inter = is;
+//     inter = is;
 
-    System.out.println(is);
-    System.out.println(inter);
+//     System.out.println(is);
+//     System.out.println(inter);
+//   }
+// }
+
+class TestClass {
+
+  // public TestClass() {
+  //   System.out.println("TestClass始動");
+  // }
+  // メンバ変数
+  public static String name = "Samurai";
+  
+  // メソッド
+  public static String testMethod(){
+      return "Engineer";
   }
 }
 
+// Main.java
+class Main {
 
+  public static void main(String[] args) {
+
+      //メンバ変数を参照する
+      String str1 = TestClass.name;
+      
+      //メソッドの呼出し
+      String str2 = TestClass.testMethod();
+      
+      //結果を出力
+      System.out.println(str1 + str2); // SamuraiEngineer
+  }
+
+}
+
+// class Car {
+//   public static int sum = 0;
+
+//   private int num;
+//   private double gas;
+
+//   public Car() {
+//     num = 0;
+//     gas = 0.0;
+//     sum++;
+//     System.out.println("車を作成しました。");
+//   }
+//   public void setCar(int n, double g) {
+//     num = n;
+//     gas = g;
+//     System.out.println("ナンバーを" + num + "にガソリン量を" + gas + "にしました。");
+//   }
+//   public static void showSun() {
+//     System.out.println("車は全部で" + sum + "台あります");
+//   }
+//   public void show() {
+//     System.out.println("車のナンバーは" + num + "です");
+//     System.out.println("ガソリン量は" + gas + "です");
+//   }
+// }
+
+// class sample1 {
+//   public static void man(String[] args) {
+//     Car.showSum();
+
+//     Car car1 = new Car();
+//     car1.setCar(1234, 20.5);
+
+//     Car.showSum();
+
+//     Car car2 = new Car();
+//     car2.setCar(4567, 30.5);
+
+//     Car.showSum();
+//   }
+// }
