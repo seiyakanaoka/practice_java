@@ -899,9 +899,9 @@
 
 class TestClass {
 
-  // public TestClass() {
-  //   System.out.println("TestClass始動");
-  // }
+  public TestClass() {
+    System.out.println("TestClass始動");
+  }
   // メンバ変数
   public static String name = "Samurai";
   
@@ -921,6 +921,8 @@ class Main {
       
       //メソッドの呼出し
       String str2 = TestClass.testMethod();
+
+      TestClass test = new TestClass();
       
       //結果を出力
       System.out.println(str1 + str2); // SamuraiEngineer
