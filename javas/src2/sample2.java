@@ -96,3 +96,17 @@
 //   }
 // }
 
+// class sample1 {
+//   public static void main(String[] args) {
+//     System.out.println("アホのやつをやりやす！！見てね！！");
+
+//     for (int i = 1; i <= 100; i++) {
+//       String str = String.valueOf(i);
+//       if (i % 3 == 0 || str.contains("3")) {
+//         System.out.println("Aho");
+//       } else {
+//         System.out.println(i);
+//       }
+//     }
+//   }
+// }
