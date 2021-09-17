@@ -110,3 +110,47 @@
 //     }
 //   }
 // }
+
+// class sample1 {
+//   public static void main(String[] args) {
+//     for (int i = 1; i <= 100; i++) {
+//       if (i == 1) {
+//         continue;
+//       }
+
+//     }
+//   }
+// }
+
+// import java.io.*;
+
+// class sample1 {
+//   public static void main(String[] args) throws IOException {
+//     System.out.println("トリボナッチ数列を求めます。");
+//     System.out.println("求めたい項の番数を入力してください。");
+//     System.out.println("なお、３桁までは指定です。0、0、1となります");
+
+//     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//     String str0 = br.readLine();
+//     int ans = Integer.parseInt(str0);
+//     int num1 = 0;
+//     int num2 = 0;
+//     int num3 = 1;
+
+//     int[] toribo = new int[ans];
+//     toribo[0] = num1;
+//     toribo[1] = num2;
+//     toribo[2] = num3;
+
+//     System.out.println(num1);
+//     System.out.println(num2);
+//     System.out.println(num3);
+
+//     for (int i = 0; i < ans - 3; i++) {
+//       toribo[i + 3] = toribo[i] + toribo[i + 1] + toribo[i + 2];
+//       System.out.println(toribo[i + 3]);
+//     }
+
+//     System.out.println("終了");
+//   }
+// }
