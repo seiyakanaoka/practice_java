@@ -154,3 +154,49 @@
 //     System.out.println("終了");
 //   }
 // }
+
+// 素数判定
+
+import java.io.*;
+
+class getS {
+  private int ans;
+  private String outpt;
+
+  public getS() {
+    ans = 0;
+    System.out.println("素数判定プログラム開始");
+    System.out.println();
+    System.out.println();
+  }
+
+  public void getAns() {
+    for (int i = 1; i <= 100; i++) {
+      ans = 0;
+      if (i == 1) {
+        continue;
+      }
+      for (int x = 1; x <= Math.sqrt(i); x++) {
+        if (i % x == 0) {
+          ans += 1;
+        }
+      }
+      if (ans == 1) {
+        System.out.println(i + "は素数です。");
+      } else {
+        System.out.println(i + "は素数ではありません。");
+      }
+    }
+    System.out.println();
+    System.out.println();
+    System.out.println("素数判定プログラム終了");
+  }
+}
+
+class sample1 {
+  public static void main(String[] args) throws IOException {
+    getS sosu = new getS();
+
+    sosu.getAns();
+  }
+}
