@@ -201,35 +201,99 @@
 //   }
 // }
 
-import java.io.*;
+// import java.io.*;
 
-class FizzBuzz {
-  public void ansWer(int ans) {
-    if (ans % 3 == 0 && ans % 5 == 0) {
-      System.out.println("FizzBuzz");
-    } else if (ans % 3 == 0) {
-      System.out.println("Fizz");
-    } else if (ans % 5 == 0) {
-      System.out.println("Buzz");
-    } else {
-      System.out.println(ans);
-    }
+// class FizzBuzz {
+//   public void ansWer(int ans) {
+//     if (ans % 3 == 0 && ans % 5 == 0) {
+//       System.out.println("FizzBuzz");
+//     } else if (ans % 3 == 0) {
+//       System.out.println("Fizz");
+//     } else if (ans % 5 == 0) {
+//       System.out.println("Buzz");
+//     } else {
+//       System.out.println(ans);
+//     }
+//   }
+// }
+
+// class sample1 {
+//   public static void main(String[] args) throws IOException {
+//     System.out.println("これよりFizzBuzzゲームを開始します");
+//     System.out.println("好きな数字を入力してください");
+
+//     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+//     String str = br.readLine();
+//     int ans = Integer.parseInt(str);
+
+//     FizzBuzz fizzbuzz = new FizzBuzz();
+//     fizzbuzz.ansWer(ans);
+
+//     System.out.println("FizzBuzzゲームを終了します");
+//   }
+// }
+
+abstract class Vehicle {
+  protected int speed;
+
+  public void setSpeed(int s) {
+    speed = s;
+    System.out.println("速度を" + speed + "にしました。");
+  }
+
+  abstract void show();
+}
+
+class Car extends Vehicle {
+  private int num;
+  private double gas;
+
+  public Car(int n, double g) {
+    num = n;
+    gas = g;
+    System.out.println("ナンバー" + num + "ガソリン量" + gas + "の車を作成しました。");
+  }
+
+  public void show() {
+    System.out.println("車のナンバー" + num + "です。");
+    System.out.println("ガソリン量は" + gas + "です。");
+    System.out.println("速度は" + speed + "です。");
+  }
+}
+
+class Plane extends Vehicle {
+  private int flight;
+
+  public Plane(int f) {
+    flight = f;
+    System.out.println("便" + flight + "の飛行機を作成しました。");
+  }
+
+  public void show() {
+    System.out.println("飛行機の便は" + flight + "です。");
+    System.out.println("速度は" + speed + "です。");
   }
 }
 
 class sample1 {
-  public static void main(String[] args) throws IOException {
-    System.out.println("これよりFizzBuzzゲームを開始します");
-    System.out.println("好きな数字を入力してください");
+  public static void main(String[] args) {
+    Vehicle[] vc;
+    vc = new Vehicle[2];
 
-    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    vc[0] = new Car(1234, 20.5);
+    vc[0].setSpeed(60);
 
-    String str = br.readLine();
-    int ans = Integer.parseInt(str);
+    System.out.println();
 
-    FizzBuzz fizzbuzz = new FizzBuzz();
-    fizzbuzz.ansWer(ans);
+    vc[1] = new Plane(232);
+    vc[1].setSpeed(500);
 
-    System.out.println("FizzBuzzゲームを終了します");
+    System.out.println();
+
+    for (int i = 0; i < vc.length; i++) {
+      vc[i].show();
+      System.out.println();
+    }
   }
 }
