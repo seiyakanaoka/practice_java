@@ -138,6 +138,11 @@ import java.util.*;
 
 class sample1 {
   public static void main(String[] args) {
+
+    // <!-- Heroクラス -->
+
+    System.out.println("Heroクラスです");
+
     List<Hero> heros = new ArrayList<>();
     Set<Hero> herosSet = new HashSet<>();
 
@@ -206,5 +211,62 @@ class sample1 {
     herosSet.remove(hero1);
 
     System.out.println(herosSet.toString());
+
+    // <!-- Accountクラス -->
+
+    System.out.println("Accountクラスです");
+    System.out.println();
+
+    List<Account> list = new ArrayList<>();
+
+    Account ac1 = new Account();
+    Account ac2 = new Account();
+    Account ac3 = new Account();
+
+    System.out.println();
+
+    ac1.setAccountNo("100");
+    ac1.setNumber(100);
+    ac1.setBalance(100);
+
+    System.out.println();
+
+    System.out.println(ac1.getAccountNo());
+    System.out.println(ac1.getNumber());
+    System.out.println(ac1.getBalance());
+
+    System.out.println();
+
+    ac2.setAccountNo("200");
+    ac2.setNumber(200);
+    ac2.setBalance(200);
+
+    System.out.println();
+
+    System.out.println(ac2.getAccountNo());
+    System.out.println(ac2.getNumber());
+    System.out.println(ac2.getBalance());
+
+    System.out.println();
+
+    ac3.setAccountNo("300");
+    ac3.setNumber(300);
+    ac3.setBalance(300);
+
+    System.out.println();
+
+    System.out.println(ac3.getAccountNo());
+    System.out.println(ac3.getNumber());
+    System.out.println(ac3.getBalance());
+
+    System.out.println();
+
+    list.add(ac1);
+    list.add(ac2);
+    list.add(ac3);
+
+    Collections.sort(list);
+
+    System.out.println(list.toString());
   }
 }

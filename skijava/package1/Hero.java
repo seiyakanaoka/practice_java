@@ -8,11 +8,11 @@ public class Hero {
     name = "";
     hp = 0;
     mp = 0;
-    System.out.println("フィールドを初期化しました。");
+    System.out.println("「Heroクラス」の全フィールドを初期化しました。");
   }
 
   public String toString() {
-    return "勇者(名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + ")";
+    return "【勇者(名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + ")】";
   }
 
   public boolean equals(Object o) {
