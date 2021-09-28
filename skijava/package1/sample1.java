@@ -139,6 +139,8 @@ import java.util.*;
 class sample1 {
   public static void main(String[] args) {
     List<Hero> heros = new ArrayList<>();
+    Set<Hero> herosSet = new HashSet<>();
+
     Hero hero1 = new Hero();
     Hero hero2 = new Hero();
     Hero hero3 = new Hero();
@@ -179,6 +181,8 @@ class sample1 {
 
     System.out.println();
 
+    // <!-- List herosのターン -->
+
     heros.add(hero1);
     heros.add(hero2);
     heros.add(hero3);
@@ -188,5 +192,19 @@ class sample1 {
     heros.remove(hero1);
 
     System.out.println(heros.toString());
+
+    // <!-- HashSet heroSetのターン -->
+
+    herosSet.add(hero1);
+    herosSet.add(hero2);
+    herosSet.add(hero3);
+
+    System.out.println(herosSet.hashCode());
+
+    System.out.println(herosSet.toString());
+
+    herosSet.remove(hero1);
+
+    System.out.println(herosSet.toString());
   }
 }

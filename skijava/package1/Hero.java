@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Hero {
   private String name;
   private int hp, mp;
@@ -7,6 +9,10 @@ public class Hero {
     hp = 0;
     mp = 0;
     System.out.println("フィールドを初期化しました。");
+  }
+
+  public String toString() {
+    return "勇者(名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + ")";
   }
 
   public boolean equals(Object o) {
@@ -29,8 +35,8 @@ public class Hero {
     return true;
   }
 
-  public String toString() {
-    return "勇者(名前=" + this.name + "/HP=" + this.hp + "/MP=" + this.mp + ")";
+  public int hashCode() {
+    return Objects.hash(this.name, this.hp, this.mp);
   }
 
   public String getName() {
