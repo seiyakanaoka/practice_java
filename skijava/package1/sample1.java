@@ -288,11 +288,17 @@
 
 // class Shark extends Fish {
 // }
+// class Sample1 {
+//   public static void main(String[] args) {
+//     Pocket<String> p = new Pocket<>();
+//     p.put("1192");
+//     String S = p.get();
+//     System.out.println(s);
+//   }
+// }
+
 class Sample1 {
   public static void main(String[] args) {
-    Pocket<String> p = new Pocket<>();
-    p.put("1192");
-    String S = p.get();
-    System.out.println(s);
+    Account ac1 = new Account("1720051", Account.AccountType.FUTSU);
   }
 }
