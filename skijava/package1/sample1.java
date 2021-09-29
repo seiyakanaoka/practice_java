@@ -134,139 +134,165 @@
 //   }
 // }
 
-import java.util.*;
+// import java.util.*;
 
-class sample1 {
+// class sample1 {
+//   public static void main(String[] args) {
+
+//     // <!-- Heroクラス -->
+
+//     System.out.println("Heroクラスです");
+
+//     List<Hero> heros = new ArrayList<>();
+//     Set<Hero> herosSet = new HashSet<>();
+
+//     Hero hero1 = new Hero();
+//     Hero hero2 = new Hero();
+//     Hero hero3 = new Hero();
+
+//     hero1.setName("誠也1");
+//     hero1.setHp(100);
+//     hero1.setMp(100);
+
+//     System.out.println();
+
+//     System.out.println(hero1.getName());
+//     System.out.println(hero1.getHp());
+//     System.out.println(hero1.getMp());
+
+//     System.out.println();
+
+//     hero2.setName("誠也2");
+//     hero2.setHp(200);
+//     hero2.setMp(200);
+
+//     System.out.println();
+
+//     System.out.println(hero2.getName());
+//     System.out.println(hero2.getHp());
+//     System.out.println(hero2.getMp());
+
+//     System.out.println();
+
+//     hero3.setName("誠也3");
+//     hero3.setHp(300);
+//     hero3.setMp(300);
+
+//     System.out.println();
+
+//     System.out.println(hero3.getName());
+//     System.out.println(hero3.getHp());
+//     System.out.println(hero3.getMp());
+
+//     System.out.println();
+
+//     // <!-- List herosのターン -->
+
+//     heros.add(hero1);
+//     heros.add(hero2);
+//     heros.add(hero3);
+
+//     System.out.println(heros.toString());
+
+//     heros.remove(hero1);
+
+//     System.out.println(heros.toString());
+
+//     // <!-- HashSet heroSetのターン -->
+
+//     herosSet.add(hero1);
+//     herosSet.add(hero2);
+//     herosSet.add(hero3);
+
+//     System.out.println(herosSet.hashCode());
+
+//     System.out.println(herosSet.toString());
+
+//     herosSet.remove(hero1);
+
+//     System.out.println(herosSet.toString());
+
+//     // <!-- Accountクラス -->
+
+//     System.out.println("Accountクラスです");
+//     System.out.println();
+
+//     List<Account> list = new ArrayList<>();
+
+//     Account ac1 = new Account();
+//     Account ac2 = new Account();
+//     Account ac3 = new Account();
+
+//     System.out.println();
+
+//     ac1.setAccountNo("100");
+//     ac1.setNumber(100);
+//     ac1.setBalance(100);
+
+//     System.out.println();
+
+//     System.out.println(ac1.getAccountNo());
+//     System.out.println(ac1.getNumber());
+//     System.out.println(ac1.getBalance());
+
+//     System.out.println();
+
+//     ac2.setAccountNo("200");
+//     ac2.setNumber(200);
+//     ac2.setBalance(200);
+
+//     System.out.println();
+
+//     System.out.println(ac2.getAccountNo());
+//     System.out.println(ac2.getNumber());
+//     System.out.println(ac2.getBalance());
+
+//     System.out.println();
+
+//     ac3.setAccountNo("300");
+//     ac3.setNumber(300);
+//     ac3.setBalance(300);
+
+//     System.out.println();
+
+//     System.out.println(ac3.getAccountNo());
+//     System.out.println(ac3.getNumber());
+//     System.out.println(ac3.getBalance());
+
+//     System.out.println();
+
+//     list.add(ac1);
+//     list.add(ac2);
+//     list.add(ac3);
+
+//     Collections.sort(list);
+
+//     System.out.println(list.toString());
+//   }
+// }
+
+// class sample1 {
+//   public static void main(String[] args) {
+//     Pocket pc = new Pocket();
+
+//     pc.put("1192");
+
+//     String s = (String)pc.get();
+//     System.out.println(s);
+//   }
+// }
+
+// class Fish {
+//   int weight = 0;
+// }
+
+// class Shark extends Fish {
+// }
+class Sample1 {
   public static void main(String[] args) {
-
-    // <!-- Heroクラス -->
-
-    System.out.println("Heroクラスです");
-
-    List<Hero> heros = new ArrayList<>();
-    Set<Hero> herosSet = new HashSet<>();
-
-    Hero hero1 = new Hero();
-    Hero hero2 = new Hero();
-    Hero hero3 = new Hero();
-
-    hero1.setName("誠也1");
-    hero1.setHp(100);
-    hero1.setMp(100);
-
-    System.out.println();
-
-    System.out.println(hero1.getName());
-    System.out.println(hero1.getHp());
-    System.out.println(hero1.getMp());
-
-    System.out.println();
-
-    hero2.setName("誠也2");
-    hero2.setHp(200);
-    hero2.setMp(200);
-
-    System.out.println();
-
-    System.out.println(hero2.getName());
-    System.out.println(hero2.getHp());
-    System.out.println(hero2.getMp());
-
-    System.out.println();
-
-    hero3.setName("誠也3");
-    hero3.setHp(300);
-    hero3.setMp(300);
-
-    System.out.println();
-
-    System.out.println(hero3.getName());
-    System.out.println(hero3.getHp());
-    System.out.println(hero3.getMp());
-
-    System.out.println();
-
-    // <!-- List herosのターン -->
-
-    heros.add(hero1);
-    heros.add(hero2);
-    heros.add(hero3);
-
-    System.out.println(heros.toString());
-
-    heros.remove(hero1);
-
-    System.out.println(heros.toString());
-
-    // <!-- HashSet heroSetのターン -->
-
-    herosSet.add(hero1);
-    herosSet.add(hero2);
-    herosSet.add(hero3);
-
-    System.out.println(herosSet.hashCode());
-
-    System.out.println(herosSet.toString());
-
-    herosSet.remove(hero1);
-
-    System.out.println(herosSet.toString());
-
-    // <!-- Accountクラス -->
-
-    System.out.println("Accountクラスです");
-    System.out.println();
-
-    List<Account> list = new ArrayList<>();
-
-    Account ac1 = new Account();
-    Account ac2 = new Account();
-    Account ac3 = new Account();
-
-    System.out.println();
-
-    ac1.setAccountNo("100");
-    ac1.setNumber(100);
-    ac1.setBalance(100);
-
-    System.out.println();
-
-    System.out.println(ac1.getAccountNo());
-    System.out.println(ac1.getNumber());
-    System.out.println(ac1.getBalance());
-
-    System.out.println();
-
-    ac2.setAccountNo("200");
-    ac2.setNumber(200);
-    ac2.setBalance(200);
-
-    System.out.println();
-
-    System.out.println(ac2.getAccountNo());
-    System.out.println(ac2.getNumber());
-    System.out.println(ac2.getBalance());
-
-    System.out.println();
-
-    ac3.setAccountNo("300");
-    ac3.setNumber(300);
-    ac3.setBalance(300);
-
-    System.out.println();
-
-    System.out.println(ac3.getAccountNo());
-    System.out.println(ac3.getNumber());
-    System.out.println(ac3.getBalance());
-
-    System.out.println();
-
-    list.add(ac1);
-    list.add(ac2);
-    list.add(ac3);
-
-    Collections.sort(list);
-
-    System.out.println(list.toString());
+    Pocket<String> p = new Pocket<>();
+    p.put("1192");
+    String S = p.get();
+    System.out.println(s);
   }
 }
