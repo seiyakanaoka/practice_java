@@ -122,3 +122,4 @@ public class Account {
     System.out.println(this.balance + "を設定しました。");
   }
 }
+
