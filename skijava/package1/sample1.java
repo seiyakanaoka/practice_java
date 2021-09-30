@@ -297,8 +297,28 @@
 //   }
 // }
 
-class Sample1 {
+// class Sample1 {
+//   public static void main(String[] args) {
+//     Account ac1 = new Account("1720051", Account.AccountType.FUTSU);
+//   }
+// }
+
+import java.util.*;
+
+class Main {
   public static void main(String[] args) {
-    Account ac1 = new Account("1720051", Account.AccountType.FUTSU);
+    StrongBox<String> strongBox = new StrongBox<>(StrongBox.KeyValues.FINGER);
+
+    strongBox.put("10000");
+    strongBox.oyaPut("100000");
+    String s = strongBox.get("成功");
+    if (s == null) {
+      System.out.println("解錠できませんでした。");
+    } else {
+      System.out.println(s);
+    }
+
+    // strongBox.put("1024");
+    // System.out.println(strongBox.get());
   }
 }
