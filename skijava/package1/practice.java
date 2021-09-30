@@ -36,3 +36,20 @@
 //   }
 // }
 
+// import java.util.function.*;
+
+// class Main {
+//   public static void main(String[] args) {
+//     FuncList funcList = new FuncList();
+
+//     IntPredicate iP = x -> {return (x % 2 == 1); };
+//     Func2 func2 = (point, name) -> {return name + "さんは" + (point > 65 ? "合格" : "不合格");};
+
+//     boolean a = iP.test(1);
+//     System.out.println(a);
+
+//     String b = func2.call(80, "誠也");
+//     System.out.println(b);
+//   }
+// }
+

@@ -303,22 +303,36 @@
 //   }
 // }
 
-import java.util.*;
+// import java.util.*;
 
-class Main {
+// class Main {
+//   public static void main(String[] args) {
+//     StrongBox<String> strongBox = new StrongBox<>(StrongBox.KeyValues.FINGER);
+
+//     strongBox.put("10000");
+//     strongBox.oyaPut("100000");
+//     String s = strongBox.get("成功");
+//     if (s == null) {
+//       System.out.println("解錠できませんでした。");
+//     } else {
+//       System.out.println(s);
+//     }
+
+//     // strongBox.put("1024");
+//     // System.out.println(strongBox.get());
+//   }
+// }
+
+import java.util.function.*;
+
+class Sample1 {
+  public static Integer len(String s) {
+    return s.length();
+  }
   public static void main(String[] args) {
-    StrongBox<String> strongBox = new StrongBox<>(StrongBox.KeyValues.FINGER);
+    Function<String, Integer> func = Sample1::len;
 
-    strongBox.put("10000");
-    strongBox.oyaPut("100000");
-    String s = strongBox.get("成功");
-    if (s == null) {
-      System.out.println("解錠できませんでした。");
-    } else {
-      System.out.println(s);
-    }
-
-    // strongBox.put("1024");
-    // System.out.println(strongBox.get());
+    int a = func.apply("Java");
+    System.out.println("文字列「Java」は" + a + "文字です。");
   }
 }
