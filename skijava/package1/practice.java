@@ -53,3 +53,28 @@
 //   }
 // }
 
+import java.util.*;
+
+class Main {
+  public static void main(String[] args) {
+    List<SkiJava> names = new ArrayList<>();
+
+    SkiJava sJ1 = new SkiJava("菅原拓真");
+    sJ1.checkMB();
+    SkiJava sJ2 = new SkiJava("大江岳人");
+    sJ2.checkMB();
+    SkiJava sJ3 = new SkiJava("朝香あゆみ");
+    sJ3.checkMB();
+    SkiJava sJ4 = new SkiJava("湊雄輔");
+    sJ4.checkMB();
+
+    names.add(sJ1);
+    names.add(sJ2);
+    names.add(sJ3);
+    names.add(sJ4);
+
+    System.out.println();
+
+    names.stream().filter(n -> n.name.length() <= 4).map(n -> n.name + "さん").forEach(System.out::println);
+  }
+}
